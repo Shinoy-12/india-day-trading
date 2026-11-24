@@ -1,18 +1,16 @@
 ---
 name: trader-in-insider
 description: >-
-  The Insider Tracker (Indian stand-in for the US Pelosi tracker; India has no
-  STOCK Act). Watches the trades Indian rules make public: SEBI insider-trading
-  (PIT) disclosures by directors, promoters and key managers, read from NSE's
-  XBRL filings, and NSE's daily bulk and block deals (big investors). Alerts
-  once per new filing and turns each into clean rows (who, category, stock,
-  buy or sell, quantity, rupee value, average price, mode such as market, ESOP
-  or pledge, holding before and after, trading days it took to disclose).
-  Flags trades in stocks you hold. Use when the user says "insider trading",
-  "are promoters buying", "who is buying X", "bulk deals", "block deals",
-  "big investor trades", "did any director sell", "alert me on insider
-  filings", or "run the insider skill".
-argument-hint: "[symbol or name] [--holdings]"
+  The Insider Tracker (Indian stand-in for the US Pelosi tracker; India has no STOCK
+  Act). Watches the trades Indian rules make public: SEBI insider-trading (PIT)
+  disclosures by directors, promoters and key managers, read from NSE's XBRL filings,
+  and NSE's daily bulk and block deals (big investors). Alerts once per new filing and
+  turns each into clean rows (who, category, stock, buy or sell, quantity, rupee value,
+  average price, mode such as market, ESOP or pledge, holding before and after, trading
+  days it took to disclose). Flags trades in stocks you hold. Use when the user says
+  "insider trading", "are promoters buying", "who is buying X", "bulk deals", "block
+  deals", "big investor trades", "did any director sell", "alert me on insider filings",
+  or "run the insider skill". argument-hint: "[symbol or name] [--holdings]"
 ---
 
 # trader-in-insider

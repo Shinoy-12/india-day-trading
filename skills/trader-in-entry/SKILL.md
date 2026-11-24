@@ -7,11 +7,11 @@ description: >-
   above the range high, or above a level you give it (like a 20-day high from the
   scanner), with an optional volume check. Knows NSE holidays and that F&O stocks stop
   at 15:15 for the closing auction. Says waiting and how far, triggered with the time
-  and the price, expired, or not open yet, and writes trader/entry.json for /trader-in-
-  exit. Long side only. It never places an order. Use when the user says "tell me when
-  to get in", "watch RELIANCE", "has it broken out", "did it break the opening range",
-  "entry signal", "time my entry", "check my watchlist", or after /trader-in-scanner and
-  /trader-in-news, before /trader-in-exit.
+  and the price, expired, or not open yet, and writes trader/entry.json for
+  /trader-in-exit. Long side only. It never places an order. Use when the user says
+  "tell me when to get in", "watch RELIANCE", "has it broken out", "did it break the
+  opening range", "entry signal", "time my entry", "check my watchlist", or after
+  /trader-in-scanner and /trader-in-news, before /trader-in-exit.
 ---
 
 # trader-in-entry

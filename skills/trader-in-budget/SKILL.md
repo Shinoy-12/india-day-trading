@@ -10,8 +10,8 @@ description: >-
   trader-in-broker. A stop too far away for your max loss is a plain refusal, not a
   smaller order. Nothing is placed. Use when the user says "how many shares", "size this
   trade", "how much should I buy", "I have Rs 50,000", "I only want to risk Rs 500 a
-  trade", "use MIS leverage", "set my rules", "keep 10% in cash", or after /trader-in-
-  exit writes a plan.
+  trade", "use MIS leverage", "set my rules", "keep 10% in cash", or after
+  /trader-in-exit writes a plan.
 ---
 
 # trader-in-budget

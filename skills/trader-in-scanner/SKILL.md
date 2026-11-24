@@ -5,12 +5,12 @@ description: >-
   Zerodha allows for MIS intraday, about 1,500, F&O stocks marked), runs a pre-market
   scan of daily closes (20-day closing-high breakout, bull flag, reclaimed the 20-day
   average, oversold, oversold bounce) and an intraday opening-range breakout scan on
-  5-minute bars from 09:15 IST, then writes trader/watchlist.json for trader-in-news
-  and trader-in-entry. Daily data from NSE's official bhavcopy, intraday from free Yahoo
-  5-minute bars (.NS symbols); NSE holidays respected. Use when
-  the user says "scan the market", "scan NSE", "find me setups", "what is breaking out",
-  "opening range breakouts", "bull flags", "oversold stocks", "pre-market scan",
-  "build my watchlist", or "what should I look at today".
+  5-minute bars from 09:15 IST, then writes trader/watchlist.json for trader-in-news and
+  trader-in-entry. Daily data from NSE's official bhavcopy, intraday from free Yahoo
+  5-minute bars (.NS symbols); NSE holidays respected. Use when the user says "scan the
+  market", "scan NSE", "find me setups", "what is breaking out", "opening range
+  breakouts", "bull flags", "oversold stocks", "pre-market scan", "build my watchlist",
+  or "what should I look at today".
 ---
 
 # trader-in-scanner
