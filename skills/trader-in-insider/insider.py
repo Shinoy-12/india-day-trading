@@ -7,6 +7,7 @@ STOCK Act, so it watches the trades Indian law makes public instead.
     python3 insider.py new --holdings            # only stocks in trader/portfolio.json and the plan
     python3 insider.py insider --symbol RELTD    # insider trades in NSE's feed, as rows
     python3 insider.py deals --name "GOLDMAN"    # today's bulk and block deals by a client name
+    python3 insider.py holders                   # 5%-holder filings (SAST Reg 29), the live feed
     python3 insider.py read https://nsearchives.nseindia.com/corporate/xbrl/IT_..._WEB.xml
 
 Sources (NSE's public files, no login):
@@ -23,6 +24,11 @@ Sources (NSE's public files, no login):
   block    block deals: trades of at least Rs 10 crore in the separate block
            window, published the same way:
            https://nsearchives.nseindia.com/content/equities/block.csv
+  holder   5%-holder filings (SEBI takeover code, Regulation 29): anyone
+           reaching 5% of a company, or moving 2% or more above it. Live
+           (NSE's insider RSS stopped in May 2026), but the feed gives only
+           company, who and when; the details are in the linked filing:
+           https://nsearchives.nseindia.com/content/RSS/Sast_Regulation29.xml
 
 Rows: source, trade date, disclosed, days to disclose (insider: trading days
 from the last trade day to the company being told; over 2 is flagged LATE),
@@ -64,6 +70,11 @@ UA = "Mozilla/5.0 (compatible; india-day-trader-skill)"
 FEED_URL = "https://nsearchives.nseindia.com/content/RSS/Insider_Trading.xml"
 DEALS_URL = "https://nsearchives.nseindia.com/content/equities/%s.csv"
 INSIDER_PAGE = "https://www.nseindia.com/companies-listing/corporate-filings-insider-trading"
+# SEBI takeover code Regulation 29: anyone reaching 5% of a company, or moving 2% or more above
+# that, discloses it. Live, unlike the insider feed; the details are in PDFs inside a ZIP.
+HOLDERS_URL = "https://nsearchives.nseindia.com/content/RSS/Sast_Regulation29.xml"
+EQUITY_L_URL = "https://nsearchives.nseindia.com/content/equities/EQUITY_L.csv"
+EQUITY_L_CACHE = "trader/cache/EQUITY_L.csv"
 STATE = "trader/state/insider.json"
 XBRL_DIR = "trader/state/insider-xbrl"
 LATE_TRADING_DAYS = 2
@@ -284,6 +295,68 @@ def deal_rows(fetcher, errors=None):
     return [r for r in got["bulk"] if key(r) not in blocks] + got["block"]
 
 
+# ---------------------------------------------------------------- 5% holders (SAST Regulation 29)
+
+def _norm_name(name):
+    n = re.sub(r"[^a-z0-9 ]+", " ", (name or "").lower())
+    n = re.sub(r"\b(limited|ltd|the|india|co|company|corporation|corp|inc)\b", " ", n)
+    return " ".join(n.split())
+
+
+def symbols_by_name(fetcher, cache=EQUITY_L_CACHE):
+    """{normalized company name: SYMBOL} from NSE's EQUITY_L.csv, cached for a day."""
+    text = None
+    if not fetcher.offline and cache and os.path.isfile(cache) and time.time() - os.path.getmtime(cache) < 86400:
+        with open(cache, encoding="utf-8") as fh:
+            text = fh.read()
+    if text is None:
+        text = fetcher.get(EQUITY_L_URL).decode("utf-8", "replace")
+        if cache and not fetcher.offline:
+            os.makedirs(os.path.dirname(cache), exist_ok=True)
+            with open(cache, "w", encoding="utf-8") as fh:
+                fh.write(text)
+    rows = list(csv.reader(io.StringIO(text.lstrip("\ufeff"))))
+    hdr = [h.strip() for h in rows[0]] if rows else []
+    if "SYMBOL" not in hdr or "NAME OF COMPANY" not in hdr:
+        raise InsiderError("NSE's equity list has an unexpected format")
+    si, ni = hdr.index("SYMBOL"), hdr.index("NAME OF COMPANY")
+    return {_norm_name(r[ni]): r[si].strip() for r in rows[1:] if len(r) > max(si, ni)}
+
+
+def parse_holders(data, names):
+    """NSE's SAST Regulation 29 RSS -> rows: who filed on which company, and when."""
+    try:
+        root = ET.fromstring(data)
+    except ET.ParseError as e:
+        raise InsiderError("the 5%-holder feed is not valid XML: %s" % e)
+    rows = []
+    for it in root.iter("item"):
+        company = " ".join((it.findtext("title") or "").split())
+        desc = " ".join((it.findtext("description") or "").split())
+        who = desc.split(":", 1)[1].strip() if ":" in desc else desc
+        link = (it.findtext("link") or "").strip()
+        pub = (it.findtext("pubDate") or "").strip()
+        d = _d(pub)
+        rows.append({
+            "source": "holder", "symbol": names.get(_norm_name(company), ""), "company": company,
+            "who": who, "category": "5% holder (SAST Reg 29)", "side": "", "quantity": None,
+            "avg_price": None, "value_inr": None, "trade_from": None, "trade_to": d.isoformat() if d else None,
+            "told_company": None, "published": pub, "trading_days_to_disclose": None, "late": False,
+            "mode": "", "remarks": "", "link": link, "id": "holder:%s" % (link or company + pub + who),
+        })
+    return rows
+
+
+def holder_rows(fetcher, errors=None):
+    errors = [] if errors is None else errors
+    try:
+        names = symbols_by_name(fetcher)
+    except InsiderError as e:
+        errors.append("NSE equity list (for symbols): %s" % e)
+        names = {}
+    return parse_holders(fetcher.get(HOLDERS_URL), names)
+
+
 # ---------------------------------------------------------------- filters and holdings
 
 def held_symbols(portfolio="trader/portfolio.json", plan="trader/plan.json", watchlist=None):
@@ -331,6 +404,10 @@ def money(v):
 
 def line(r, held=()):
     flag = "  << YOU HOLD %s" % r["symbol"] if r["symbol"] in held else ""
+    if r["source"] == "holder":
+        return ("HOLDER  %-11s %s: %s filed a 5%%-holder disclosure (SAST Reg 29), published %s%s\n"
+                "        buy or sell, shares and %% are in the filing: %s" % (
+                    r["symbol"] or "(no NSE sym)", r["company"][:40], r["who"][:60], r["published"], flag, r["link"]))
     when = r["trade_from"] or "?"
     if r.get("trade_to") and r["trade_to"] != r["trade_from"]:
         when += " to " + r["trade_to"]
@@ -445,6 +522,18 @@ def cmd_deals(a, fetcher, held):
     return 0 if rows else 1
 
 
+def cmd_holders(a, fetcher, held):
+    errors = []
+    rows = _common_filters(a, holder_rows(fetcher, errors))
+    if a.holdings:
+        rows = [r for r in rows if r["symbol"] in held]
+    if a.json:
+        print(json.dumps({"rows": rows, "notes": errors}, indent=2))
+    else:
+        show(rows, held, errors, "5%-holder filings in NSE's feed (SEBI takeover code, Regulation 29), newest first:")
+    return 0 if rows else 1
+
+
 def cmd_new(a, fetcher, held):
     now = _dt.datetime.now(_dt.timezone.utc).replace(microsecond=0, tzinfo=None)
     state = load_state(a.state)
@@ -460,6 +549,11 @@ def cmd_new(a, fetcher, held):
             errors.append(note)
     if not a.no_deals:
         rows += deal_rows(fetcher, errors)
+    if not a.no_holders:
+        try:
+            rows += holder_rows(fetcher, errors)
+        except InsiderError as e:
+            errors.append("5%%-holder feed: %s" % e)
     rows = _common_filters(a, rows)
     if a.holdings:
         rows = [r for r in rows if r["symbol"] in held]
@@ -508,6 +602,7 @@ def main(argv=None):
     p.add_argument("--limit", type=int, help="read only the newest N insider filings")
     p.add_argument("--no-insider", action="store_true")
     p.add_argument("--no-deals", action="store_true")
+    p.add_argument("--no-holders", action="store_true", help="skip the 5%%-holder (SAST Reg 29) feed")
     p.add_argument("--market-only", action="store_true", help="hide ESOP, pledge, off-market and gift rows")
     p.add_argument("--state", default=STATE)
     p.add_argument("--dry-run", action="store_true", help="do not remember what was shown")
@@ -516,6 +611,8 @@ def main(argv=None):
     p.add_argument("--limit", type=int)
     p.add_argument("--market-only", action="store_true")
     p = sub.add_parser("deals", help="the latest bulk and block deals")
+    common(p)
+    p = sub.add_parser("holders", help="5%%-holder filings (SAST Regulation 29), the live big-holder feed")
     common(p)
     p = sub.add_parser("read", help="read one insider XBRL disclosure")
     p.add_argument("url")
@@ -530,7 +627,7 @@ def main(argv=None):
     fetcher = Fetcher(offline=a.offline)
     held = held_symbols(a.portfolio, a.plan)
     try:
-        return {"new": cmd_new, "insider": cmd_insider, "deals": cmd_deals, "read": cmd_read}[a.cmd](a, fetcher, held)
+        return {"new": cmd_new, "insider": cmd_insider, "deals": cmd_deals, "holders": cmd_holders, "read": cmd_read}[a.cmd](a, fetcher, held)
     except InsiderError as e:
         print("insider.py: %s" % e, file=sys.stderr)
         return 1

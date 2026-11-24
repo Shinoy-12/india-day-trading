@@ -30,7 +30,13 @@ information here: only public filings, read quickly. Say that every time.
 
 **Status:** built for NSE (2026-11-24), tested on NSE's live files. NSE's
 insider RSS feed's newest filing was 2 May 2026 when this was built; the tool
-warns when the feed is stale and points to NSE's insider-trading page.
+warns when the feed is stale and points to NSE's insider-trading page. NSE's
+insider lookup and BSE's both block programs, so there is no live insider
+source. The live stand-in is NSE's 5%-holder feed (SEBI takeover code,
+Regulation 29: anyone reaching 5% of a company, or moving 2% or more above it,
+promoters included): `insider.py holders`, also part of `insider.py new`. It
+gives company, who and when only; the buy or sell, shares and % are in the
+filing's PDFs (link shown). Say so when you show these rows.
 
 Tool in this folder (standard library Python):
 
@@ -42,7 +48,9 @@ python3 "${CLAUDE_SKILL_DIR}/insider.py" --help
 
 - Reads `https://nsearchives.nseindia.com/content/RSS/Insider_Trading.xml` and
   each disclosure's XBRL (`.../corporate/xbrl/IT_..._WEB.xml`), plus
-  `.../content/equities/bulk.csv` and `block.csv`.
+  `.../content/equities/bulk.csv` and `block.csv`, and the 5%-holder feed
+  `.../content/RSS/Sast_Regulation29.xml` (symbols from NSE's `EQUITY_L.csv`,
+  cached a day in `trader/cache/`; SME-platform companies show no symbol).
 - Writes `trader/state/insider.json` (what was shown, so each item alerts once)
   and keeps the XBRL files in `trader/state/insider-xbrl/`.
 - Reads `trader/portfolio.json` and `trader/plan.json` to flag trades in what
@@ -70,6 +78,7 @@ python3 "${CLAUDE_SKILL_DIR}/insider.py" --help
 2. A stock: `insider.py insider --symbol BAJAJFINSV` and `insider.py deals --symbol LENSKART`.
 3. A name: `insider.py deals --name "GOLDMAN"`, `insider.py insider --name "Lath"`.
 4. One filing: `insider.py read <XBRL link>`.
+5. Big holders (live): `insider.py holders` (add `--holdings` or `--symbol`).
 5. To watch through the day, run `new` on a schedule (a scheduled task or
    /loop); it alerts once per item.
 
