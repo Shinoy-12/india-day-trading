@@ -25,6 +25,13 @@ work around the one moment that matters, your yes:
             flat_by (before Zerodha's MIS square-off). It still goes through
             trader-in-risk and your yes.
   log       prints today's decisions.
+  gtt-check finds leftover stop/target GTTs: an active MIS GTT whose SELL leg
+            is bigger than your open MIS position in that stock. A GTT lives
+            across days, so after Zerodha's auto square-off (or any close that
+            skipped deleting it) its stop leg can fire on no shares and open a
+            short. Reads Kite's gtt list and positions saved as JSON; prints
+            the gtt delete inputs. It deletes nothing itself. GTTs on CNC or
+            NRML (holdings, F&O) are left alone.
 
 Paper ("paper": true, the default): Kite has no paper account, so paper mode
 is a local simulation. Nothing is sent to Kite; you record a simulated fill at
@@ -40,6 +47,7 @@ own approval form or browser link asks you again before anything reaches NSE.
     python3 ticket.py fill --symbol TCS --side buy --qty 15 --price 2443.50
     python3 ticket.py flatten --symbol TCS --qty 15
     python3 ticket.py log
+    python3 ticket.py gtt-check --gtts gtts.json --positions positions.json
 
 Everything is written to trader/state/broker.json (append only). Dates are
 India dates; --now "2026-11-23 10:15" pins the clock.
@@ -652,7 +660,82 @@ def cmd_flatten(a):
     print("     then mode=delete with its trigger id), or it can fire after you are out and open a short.")
     print("     Then the Kite orders tool with the ticket. Zerodha auto squares off MIS at %s anyway, for a fee."
           % market_in.square_off_time(market_in.is_fno(sym)).strftime("%H:%M"))
+    print("  4. After the close, run ticket.py gtt-check to catch any GTT left behind (for example after an auto")
+    print("     square-off).")
     return 0
+
+
+def _rows(doc, what):
+    """Kite answers as saved: {"data": [...]}, a bare list, or {"net": [...], "day": [...]}."""
+    if isinstance(doc, list):
+        return doc
+    if isinstance(doc, dict):
+        if isinstance(doc.get("data"), list):
+            return doc["data"]
+        if isinstance(doc.get("data"), dict):
+            return _rows(doc["data"], what)
+        if isinstance(doc.get("net"), list):
+            return [dict(r, view="net") for r in doc["net"]]
+    raise TicketError("%s: not a Kite %s answer" % (what, what))
+
+
+def leftover_gtts(gtts, positions):
+    """-> [{id, symbol, sell_qty, held, why, delete}] for active MIS GTTs bigger than the open MIS position."""
+    held = {}
+    for r in positions:
+        if r.get("view") not in (None, "net"):
+            continue  # view=day is today's activity, not what is open
+        if str(r.get("product") or "").upper() != "MIS":
+            continue
+        key = (str(r.get("exchange") or "NSE").upper(), str(r.get("tradingsymbol") or "").upper())
+        held[key] = held.get(key, 0) + int(float(r.get("quantity") or 0))
+    out = []
+    for g in gtts:
+        status = str(g.get("status") or "active").lower()
+        if status != "active":
+            continue
+        cond = g.get("condition") or {}
+        exch = str(cond.get("exchange") or g.get("exchange") or "NSE").upper()
+        sym = str(cond.get("tradingsymbol") or g.get("tradingsymbol") or "").upper()
+        legs = g.get("orders") or []
+        mis = [o for o in legs if str(o.get("product") or "").upper() == "MIS"]
+        if not mis:
+            continue  # CNC / NRML GTTs belong to holdings or F&O, not to a day trade
+        sell = max([int(float(o.get("quantity") or 0)) for o in mis
+                    if str(o.get("transaction_type") or "").upper() == "SELL"] or [0])
+        if not sell:
+            continue
+        have = held.get((exch, sym), 0)
+        if have >= sell:
+            continue
+        gid = g.get("id") or g.get("trigger_id")
+        why = ("no open MIS position" if have <= 0 else "only %d shares open" % have)
+        out.append({"id": gid, "symbol": sym, "exchange": exch, "sell_qty": sell, "held": have,
+                    "triggers": cond.get("trigger_values"), "why": why,
+                    "delete": {"mode": "delete", "trigger_id": gid}})
+    return out
+
+
+def cmd_gtt_check(a):
+    gtts = _rows(read_json(a.gtts, "gtt list"), "gtt list")
+    positions = _rows(read_json(a.positions, "positions"), "positions")
+    left = leftover_gtts(gtts, positions)
+    if a.json:
+        print(json.dumps({"leftover": left}, indent=2))
+        return 1 if left else 0
+    if not left:
+        print("No leftover GTTs: every active MIS stop/target GTT is covered by an open MIS position.")
+        return 0
+    print("LEFTOVER GTTs: %d. Each can fire with no shares behind it and open a short:" % len(left))
+    for g in left:
+        trig = ", ".join("%.2f" % float(t) for t in (g["triggers"] or []))
+        print("  %s %s: GTT %s sells %d (%s), triggers %s" % (g["exchange"], g["symbol"], g["id"], g["sell_qty"],
+                                                          g["why"], trig or "?"))
+    print("Delete each with the Kite gtt tool, after the user's yes (one call per GTT):")
+    for g in left:
+        print("  " + json.dumps(g["delete"]))
+    print("Nothing was deleted by this tool.")
+    return 1
 
 
 def cmd_log(a):
@@ -731,13 +814,18 @@ def main(argv=None):
     p.add_argument("--state", default="trader/state/broker.json")
     clock(p)
     p.add_argument("--all", action="store_true")
+    p = sub.add_parser("gtt-check", help="find leftover MIS stop/target GTTs with no position behind them")
+    p.add_argument("--gtts", required=True, help="Kite gtt mode=list answer, saved as JSON")
+    p.add_argument("--positions", required=True, help="Kite portfolio mode=positions answer, saved as JSON")
+    p.add_argument("--json", action="store_true")
     a = ap.parse_args(argv)
     if not a.cmd:
         ap.print_help()
         return 1
     try:
         return {"show": cmd_show, "approve": cmd_approve, "decline": cmd_decline, "result": cmd_result,
-                "fill": cmd_fill, "flatten": cmd_flatten, "log": cmd_log}[a.cmd](a)
+                "fill": cmd_fill, "flatten": cmd_flatten, "log": cmd_log,
+                "gtt-check": cmd_gtt_check}[a.cmd](a)
     except TicketError as e:
         print("ticket.py: %s" % e, file=sys.stderr)
         return 1

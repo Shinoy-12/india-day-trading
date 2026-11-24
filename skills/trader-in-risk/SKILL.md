@@ -19,6 +19,9 @@ description: >-
 
 **Status: ported to NSE / Zerodha Kite (2026-11-24), tested on 23 Nov 2026 data.** The script's docstring (`--help`) is the reference; the checklist below records what was changed.
 
+## Before the first entry of the day
+Run trader-in-broker's leftover-GTT check (`ticket.py gtt-check`, see its SKILL.md) before passing the day's first new entry. A stop/target GTT left over from an earlier day can open a short on its own. If any are listed, tell the user before going on.
+
 ## Porting checklist
 - [x] Replace the NYSE clock block (`NYSE_HOLIDAYS`, `NYSE_EARLY_CLOSE`, `OPEN`/`CLOSE`, `trading_day`, `session`, `next_open`) with `from market_in import ...`.
 - [x] New York time -> India time in messages, defaults and argument help.
