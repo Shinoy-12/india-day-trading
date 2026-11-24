@@ -1,0 +1,6563 @@
+{
+ "_source": "https://zerodha.com/margin-calculator/Equity/",
+ "_last_updated": "23 Nov 2026",
+ "_note": "Stocks allowed for MIS (intraday) at Zerodha and their leverage. A stock not listed here cannot be traded MIS. Refresh with refresh_data.py.",
+ "stocks": {
+  "20MICRONS": {
+   "mis_margin_pct": "23.08",
+   "leverage": "4.33"
+  },
+  "360ONE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "3MINDIA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "5PAISA": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "63MOONS": {
+   "mis_margin_pct": "24.98",
+   "leverage": "4"
+  },
+  "AADHARHFC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "AARTIDRUGS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "AARTIIND": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "AARTIPHARM": {
+   "mis_margin_pct": "22.95",
+   "leverage": "4.36"
+  },
+  "AAVAS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ABB": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ABBOTINDIA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ABCAPITAL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ABDL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ABFRL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ABLBL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ABREL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ABSLAMC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ABSLBANETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ACC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ACCELYA": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "ACE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ACEVECTOR": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ACI": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ACMESOLAR": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ACUTAAS": {
+   "mis_margin_pct": "22.63",
+   "leverage": "4.42"
+  },
+  "ADANIENSOL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ADANIENT": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ADANIGREEN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ADANIPORTS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ADANIPOWER": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ADFFOODS": {
+   "mis_margin_pct": "22.96",
+   "leverage": "4.36"
+  },
+  "ADOR": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ADROITIND": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "ADSL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "ADVAIT": {
+   "mis_margin_pct": "24.27",
+   "leverage": "4.12"
+  },
+  "ADVANCE": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "ADVENTHTL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "ADVENZYMES": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "AEGISLOG": {
+   "mis_margin_pct": "24.76",
+   "leverage": "4.04"
+  },
+  "AEGISVOPAK": {
+   "mis_margin_pct": "21.3",
+   "leverage": "4.69"
+  },
+  "AEQUS": {
+   "mis_margin_pct": "21.91",
+   "leverage": "4.56"
+  },
+  "AEROENTER": {
+   "mis_margin_pct": "26.93",
+   "leverage": "3.71"
+  },
+  "AEROFLEX": {
+   "mis_margin_pct": "29.62",
+   "leverage": "3.38"
+  },
+  "AEROPLANE": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "AETHER": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "AFCONS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "AFFLE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "AGARIND": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "AGARWALEYE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "AGI": {
+   "mis_margin_pct": "21.63",
+   "leverage": "4.62"
+  },
+  "AGIIL": {
+   "mis_margin_pct": "24.45",
+   "leverage": "4.09"
+  },
+  "AGL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "AHLUCONT": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "AIAENG": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "AIIL": {
+   "mis_margin_pct": "24.23",
+   "leverage": "4.13"
+  },
+  "AJANTPHARM": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "AJAXENGG": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "AJMERA": {
+   "mis_margin_pct": "22.89",
+   "leverage": "4.37"
+  },
+  "AKUMS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ALEMBICLTD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ALGOQUANT": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ALICON": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "ALIVUS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ALKEM": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ALKYLAMINE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ALLCARGO": {
+   "mis_margin_pct": "23.98",
+   "leverage": "4.17"
+  },
+  "ALLTIME": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "ALOKINDS": {
+   "mis_margin_pct": "21.06",
+   "leverage": "4.75"
+  },
+  "ALPHA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ALPHAETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ALPL30IETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "AMAGI": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "AMANTA": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "AMBER": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "AMBIKCO": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "AMBUJACEM": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "AMRUTANJAN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ANANDRATHI": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ANANTRAJ": {
+   "mis_margin_pct": "22.2",
+   "leverage": "4.5"
+  },
+  "ANDHRAPAP": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "ANDHRSUGAR": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ANGELONE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ANTELOPUS": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "ANTHEM": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ANUP": {
+   "mis_margin_pct": "23.04",
+   "leverage": "4.34"
+  },
+  "ANURAS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "AONELIQUID": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "AONESTEELS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "APARINDS": {
+   "mis_margin_pct": "23.07",
+   "leverage": "4.33"
+  },
+  "APCOTEXIND": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "APEX": {
+   "mis_margin_pct": "26.23",
+   "leverage": "3.81"
+  },
+  "APLAPOLLO": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "APLLTD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "APOLLO": {
+   "mis_margin_pct": "27.58",
+   "leverage": "3.63"
+  },
+  "APOLLOHOSP": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "APOLLOPIPE": {
+   "mis_margin_pct": "23.06",
+   "leverage": "4.34"
+  },
+  "APOLLOTYRE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "APTUS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ARCIL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "ARDEE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ARE&M": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ARFIN": {
+   "mis_margin_pct": "22.36",
+   "leverage": "4.47"
+  },
+  "ARIHANTCAP": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "ARIS": {
+   "mis_margin_pct": "22.57",
+   "leverage": "4.43"
+  },
+  "ARKADE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ARMANFIN": {
+   "mis_margin_pct": "20.78",
+   "leverage": "4.81"
+  },
+  "ARMEE": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "ARROWGREEN": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "ARSSBL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ARTEMISMED": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ARVIND": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ARVINDFASN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ARVSMART": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ASAHIINDIA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ASAL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "ASALCBR": {
+   "mis_margin_pct": "21.07",
+   "leverage": "4.75"
+  },
+  "ASHAPURMIN": {
+   "mis_margin_pct": "24.83",
+   "leverage": "4.03"
+  },
+  "ASHIANA": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "ASHOKA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ASHOKLEY": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ASIANENE": {
+   "mis_margin_pct": "25.23",
+   "leverage": "3.96"
+  },
+  "ASIANPAINT": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ASIANTILES": {
+   "mis_margin_pct": "23.92",
+   "leverage": "4.18"
+  },
+  "ASKAUTOLTD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ASMTEC": {
+   "mis_margin_pct": "25.89",
+   "leverage": "3.86"
+  },
+  "ASTEC": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "ASTERDM": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ASTRAL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ASTRAMICRO": {
+   "mis_margin_pct": "20.34",
+   "leverage": "4.92"
+  },
+  "ASTRAZEN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ATGL": {
+   "mis_margin_pct": "20.92",
+   "leverage": "4.78"
+  },
+  "ATHERENERG": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ATLANTAELE": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "ATUL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ATULAUTO": {
+   "mis_margin_pct": "20.41",
+   "leverage": "4.9"
+  },
+  "AUBANK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "AURIONPRO": {
+   "mis_margin_pct": "22.55",
+   "leverage": "4.43"
+  },
+  "AUROPHARMA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "AURUM": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "AUTOAXLES": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "AUTOBEES": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "AUTOIETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "AVADHSUGAR": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "AVALON": {
+   "mis_margin_pct": "27.82",
+   "leverage": "3.59"
+  },
+  "AVANTEL": {
+   "mis_margin_pct": "22.35",
+   "leverage": "4.47"
+  },
+  "AVANTIFEED": {
+   "mis_margin_pct": "23.01",
+   "leverage": "4.35"
+  },
+  "AVL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "AVTNPL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "AWFIS": {
+   "mis_margin_pct": "22.82",
+   "leverage": "4.38"
+  },
+  "AWHCL": {
+   "mis_margin_pct": "21.16",
+   "leverage": "4.73"
+  },
+  "AWL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "AXISBANK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "AXISCADES": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "AYE": {
+   "mis_margin_pct": "22",
+   "leverage": "4.55"
+  },
+  "AYMSYNTEX": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "AZAD": {
+   "mis_margin_pct": "21.58",
+   "leverage": "4.63"
+  },
+  "BAJAJ-AUTO": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BAJAJCON": {
+   "mis_margin_pct": "23.09",
+   "leverage": "4.33"
+  },
+  "BAJAJELEC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BAJAJFINSV": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BAJAJHCARE": {
+   "mis_margin_pct": "21.63",
+   "leverage": "4.62"
+  },
+  "BAJAJHFL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BAJAJHIND": {
+   "mis_margin_pct": "21.97",
+   "leverage": "4.55"
+  },
+  "BAJAJHLDNG": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BAJEL": {
+   "mis_margin_pct": "21.12",
+   "leverage": "4.73"
+  },
+  "BAJFINANCE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BALAJITELE": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "BALAMINES": {
+   "mis_margin_pct": "25.57",
+   "leverage": "3.91"
+  },
+  "BALKRISIND": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BALMLAWRIE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BALRAMCHIN": {
+   "mis_margin_pct": "20.28",
+   "leverage": "4.93"
+  },
+  "BALUFORGE": {
+   "mis_margin_pct": "24.83",
+   "leverage": "4.03"
+  },
+  "BANARISUG": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "BANCOINDIA": {
+   "mis_margin_pct": "22.57",
+   "leverage": "4.43"
+  },
+  "BANDHANBNK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BANK10ADD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BANKADD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BANKBARODA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BANKBEES": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BANKBETA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BANKETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BANKIETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BANKINDIA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BANKNIFTY1": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BANSALWIRE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BASF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BATAINDIA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BAYERCROP": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BBETF0432": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BBL": {
+   "mis_margin_pct": "21.05",
+   "leverage": "4.75"
+  },
+  "BBOX": {
+   "mis_margin_pct": "23.47",
+   "leverage": "4.26"
+  },
+  "BBTC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BCG": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "BCLIND": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BDL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BECTORFOOD": {
+   "mis_margin_pct": "20.39",
+   "leverage": "4.9"
+  },
+  "BEL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BELDING": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "BELRISE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BEML": {
+   "mis_margin_pct": "20.64",
+   "leverage": "4.84"
+  },
+  "BENGALASM": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "BEPL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BERGEPAINT": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BESTAGRO": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "BETA": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "BFINVEST": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "BFSI": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BFUTILITIE": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "BHAGCHEM": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "BHAGERIA": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "BHARATCOAL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BHARATFORG": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BHARATRAS": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "BHARATSE": {
+   "mis_margin_pct": "26.05",
+   "leverage": "3.84"
+  },
+  "BHARATWIRE": {
+   "mis_margin_pct": "24.38",
+   "leverage": "4.1"
+  },
+  "BHARTIARTL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BHARTIHEXA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BHEL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BIKAJI": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BIOCON": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BIRLACORPN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BIRLANU": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "BLACKBUCK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BLEL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BLKASHYAP": {
+   "mis_margin_pct": "23.56",
+   "leverage": "4.24"
+  },
+  "BLS": {
+   "mis_margin_pct": "20.82",
+   "leverage": "4.8"
+  },
+  "BLSE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BLSPOLY": {
+   "mis_margin_pct": "25",
+   "leverage": "4"
+  },
+  "BLUECLOUDS": {
+   "mis_margin_pct": "28.63",
+   "leverage": "3.49"
+  },
+  "BLUEDART": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BLUEJET": {
+   "mis_margin_pct": "22.37",
+   "leverage": "4.47"
+  },
+  "BLUESTARCO": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BLUESTONE": {
+   "mis_margin_pct": "22.93",
+   "leverage": "4.36"
+  },
+  "BLUSPRING": {
+   "mis_margin_pct": "27.25",
+   "leverage": "3.67"
+  },
+  "BOMDYEING": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BONDADA": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "BONFIG": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "BORANA": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "BOROLTD": {
+   "mis_margin_pct": "22.25",
+   "leverage": "4.49"
+  },
+  "BORORENEW": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BOSCH-HCIL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BOSCHLTD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BPCL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BRIGADE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BRIGHOTEL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "BRITANNIA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BSE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BSLGOLDETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BSLNIFTY": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BSOFT": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "BUILDPRO": {
+   "mis_margin_pct": "22.79",
+   "leverage": "4.39"
+  },
+  "CAMLINFINE": {
+   "mis_margin_pct": "28.23",
+   "leverage": "3.54"
+  },
+  "CAMPUS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CAMS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CANBK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CANFINHOME": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CANHLIFE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CANTABIL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CAPACITE": {
+   "mis_margin_pct": "22.02",
+   "leverage": "4.54"
+  },
+  "CAPILLARY": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CAPITALSFB": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "CAPLIPOINT": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CARBORUNIV": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CARERATING": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CARRARO": {
+   "mis_margin_pct": "20.33",
+   "leverage": "4.92"
+  },
+  "CARTRADE": {
+   "mis_margin_pct": "26.28",
+   "leverage": "3.81"
+  },
+  "CARYSIL": {
+   "mis_margin_pct": "20.87",
+   "leverage": "4.79"
+  },
+  "CASHIETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CASTROLIND": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CCAVENUE": {
+   "mis_margin_pct": "20.54",
+   "leverage": "4.87"
+  },
+  "CCL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CDSL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CEATLTD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CEIGALL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CEINSYS": {
+   "mis_margin_pct": "25.49",
+   "leverage": "3.92"
+  },
+  "CELLO": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CENTENKA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CENTRALBK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CENTRUM": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "CENTUM": {
+   "mis_margin_pct": "25.01",
+   "leverage": "4"
+  },
+  "CENTURYPLY": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CERA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CESC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CFF": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "CGCL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CGPOWER": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CHALET": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CHAMBLFERT": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CHEMPLASTS": {
+   "mis_margin_pct": "23.89",
+   "leverage": "4.19"
+  },
+  "CHENNPETRO": {
+   "mis_margin_pct": "25.12",
+   "leverage": "3.98"
+  },
+  "CHOICEIN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CHOLAFIN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CHOLAHLDNG": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CIEINDIA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CIPLA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CLEAN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CLEANMAX": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CLSEL": {
+   "mis_margin_pct": "20.48",
+   "leverage": "4.88"
+  },
+  "CMLL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CMPDI": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CMRGREEN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CMSINFO": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CNL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "COALINDIA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "COCHINSHIP": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "COCKERILL": {
+   "mis_margin_pct": "25.93",
+   "leverage": "3.86"
+  },
+  "COFFEEDAY": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "COFORGE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "COHANCE": {
+   "mis_margin_pct": "21.78",
+   "leverage": "4.59"
+  },
+  "COLPAL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "COMSYN": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "CONCOR": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CONCORDBIO": {
+   "mis_margin_pct": "21.43",
+   "leverage": "4.67"
+  },
+  "CONFIPET": {
+   "mis_margin_pct": "28.76",
+   "leverage": "3.48"
+  },
+  "CONSUMBEES": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CORDELIA": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "COROMANDEL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CORONA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "COSMOFIRST": {
+   "mis_margin_pct": "20.47",
+   "leverage": "4.89"
+  },
+  "CPPLUS": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "CPSEETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CRAFTSMAN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CRAMC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CREDITACC": {
+   "mis_margin_pct": "20.06",
+   "leverage": "4.99"
+  },
+  "CRISIL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CRIZAC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CROMPTON": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CSBBANK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CUB": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CUMMINSIND": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CUPID": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "CYIENT": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "CYIENTDLM": {
+   "mis_margin_pct": "25.09",
+   "leverage": "3.99"
+  },
+  "DABUR": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "DALBHARAT": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "DALMIASUG": {
+   "mis_margin_pct": "24.12",
+   "leverage": "4.15"
+  },
+  "DAMCAPITAL": {
+   "mis_margin_pct": "21.16",
+   "leverage": "4.73"
+  },
+  "DATAMATICS": {
+   "mis_margin_pct": "20.57",
+   "leverage": "4.86"
+  },
+  "DATAPATTNS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "DBCORP": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "DBL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "DBOL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "DBREALTY": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "DCBBANK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "DCMSHRIRAM": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "DCW": {
+   "mis_margin_pct": "21.75",
+   "leverage": "4.6"
+  },
+  "DCXINDIA": {
+   "mis_margin_pct": "22.05",
+   "leverage": "4.54"
+  },
+  "DDEVPLSTIK": {
+   "mis_margin_pct": "20.84",
+   "leverage": "4.8"
+  },
+  "DECNGOLD": {
+   "mis_margin_pct": "29.78",
+   "leverage": "3.36"
+  },
+  "DEEDEV": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "DEEPA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "DEEPAKFERT": {
+   "mis_margin_pct": "21.52",
+   "leverage": "4.65"
+  },
+  "DEEPAKNTR": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "DEEPINDS": {
+   "mis_margin_pct": "23.47",
+   "leverage": "4.26"
+  },
+  "DEFENCE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "DELHIVERY": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "DELTACORP": {
+   "mis_margin_pct": "25.28",
+   "leverage": "3.96"
+  },
+  "DENTA": {
+   "mis_margin_pct": "22",
+   "leverage": "4.55"
+  },
+  "DEVYANI": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "DHAMPURSUG": {
+   "mis_margin_pct": "20.49",
+   "leverage": "4.88"
+  },
+  "DHANBANK": {
+   "mis_margin_pct": "24.19",
+   "leverage": "4.13"
+  },
+  "DHANUKA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "DHOOTTRANS": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "DIAMONDYD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "DIFFNKG": {
+   "mis_margin_pct": "22.85",
+   "leverage": "4.38"
+  },
+  "DIGITIDE": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "DIVGIITTS": {
+   "mis_margin_pct": "22.21",
+   "leverage": "4.5"
+  },
+  "DIVISLAB": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "DIXON": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "DLF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "DLINKINDIA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "DMART": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "DMCC": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "DODLA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "DOLLAR": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "DOLPHIN": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "DOMS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "DREDGECORP": {
+   "mis_margin_pct": "24.91",
+   "leverage": "4.01"
+  },
+  "DRREDDY": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "DSSL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "DWARKESH": {
+   "mis_margin_pct": "23.1",
+   "leverage": "4.33"
+  },
+  "DYCL": {
+   "mis_margin_pct": "27.44",
+   "leverage": "3.64"
+  },
+  "DYNAMATECH": {
+   "mis_margin_pct": "20.95",
+   "leverage": "4.77"
+  },
+  "EASEMYTRIP": {
+   "mis_margin_pct": "23.23",
+   "leverage": "4.3"
+  },
+  "EBBETF0430": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "EBBETF0431": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "EBBETF0433": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "EBGNG": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "ECLERX": {
+   "mis_margin_pct": "21.93",
+   "leverage": "4.56"
+  },
+  "ECOSMOBLTY": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "EDELALTS": {
+   "mis_margin_pct": "25",
+   "leverage": "4"
+  },
+  "EDELWEISS": {
+   "mis_margin_pct": "20.73",
+   "leverage": "4.82"
+  },
+  "EFCIL": {
+   "mis_margin_pct": "21.37",
+   "leverage": "4.68"
+  },
+  "EGOLD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "EICHERMOT": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "EIDPARRY": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "EIEL": {
+   "mis_margin_pct": "22.44",
+   "leverage": "4.46"
+  },
+  "EIHOTEL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "EIMCOELECO": {
+   "mis_margin_pct": "24.34",
+   "leverage": "4.11"
+  },
+  "EKC": {
+   "mis_margin_pct": "20.45",
+   "leverage": "4.89"
+  },
+  "ELANTAS": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "ELECON": {
+   "mis_margin_pct": "23",
+   "leverage": "4.35"
+  },
+  "ELECTCAST": {
+   "mis_margin_pct": "22.1",
+   "leverage": "4.52"
+  },
+  "ELECTHERM": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "ELEVATE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ELGIEQUIP": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ELLEN": {
+   "mis_margin_pct": "23.51",
+   "leverage": "4.25"
+  },
+  "EMAMILTD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "EMBDL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "EMCURE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "EMIL": {
+   "mis_margin_pct": "23.46",
+   "leverage": "4.26"
+  },
+  "EMKAY": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "EMMVEE": {
+   "mis_margin_pct": "20.38",
+   "leverage": "4.91"
+  },
+  "EMSLIMITED": {
+   "mis_margin_pct": "24.02",
+   "leverage": "4.16"
+  },
+  "ENDURANCE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ENERGY": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ENGINERSIN": {
+   "mis_margin_pct": "22.4",
+   "leverage": "4.46"
+  },
+  "ENRIN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ENTERO": {
+   "mis_margin_pct": "20.52",
+   "leverage": "4.87"
+  },
+  "EPACK": {
+   "mis_margin_pct": "23.6",
+   "leverage": "4.24"
+  },
+  "EPACKPEB": {
+   "mis_margin_pct": "23.96",
+   "leverage": "4.17"
+  },
+  "EPIGRAL": {
+   "mis_margin_pct": "20.83",
+   "leverage": "4.8"
+  },
+  "EPL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "EQUITASBNK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ERIS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ESABINDIA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ESCORTS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ESILVER": {
+   "mis_margin_pct": "22.08",
+   "leverage": "4.53"
+  },
+  "ETERNAL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ETHOSLTD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "EUREKAFORB": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "EUROPRATIK": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "EVEREADY": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "EVONILE": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "EXCELSOFT": {
+   "mis_margin_pct": "20.55",
+   "leverage": "4.87"
+  },
+  "EXICOM": {
+   "mis_margin_pct": "27.7",
+   "leverage": "3.61"
+  },
+  "EXIDEIND": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "EXPLEOSOL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "FABTECH": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "FACT": {
+   "mis_margin_pct": "21.09",
+   "leverage": "4.74"
+  },
+  "FAZE3Q": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "FCL": {
+   "mis_margin_pct": "27.74",
+   "leverage": "3.6"
+  },
+  "FDC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "FEDERALBNK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "FEDFINA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "FERMENTA": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "FIEMIND": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "FILATEX": {
+   "mis_margin_pct": "24.63",
+   "leverage": "4.06"
+  },
+  "FINCABLES": {
+   "mis_margin_pct": "24.25",
+   "leverage": "4.12"
+  },
+  "FINEORG": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "FINIETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "FINOPB": {
+   "mis_margin_pct": "26.66",
+   "leverage": "3.75"
+  },
+  "FINPIPE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "FIRSTCRY": {
+   "mis_margin_pct": "20.87",
+   "leverage": "4.79"
+  },
+  "FISCHER": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "FIVESTAR": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "FLAIR": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "FLUOROCHEM": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "FMCGIETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "FMGOETZE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "FORCEMOT": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "FORTIS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "FOSECOIND": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "FRACTAL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "FREDUN": {
+   "mis_margin_pct": "25.46",
+   "leverage": "3.93"
+  },
+  "FRONTSP": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "FSL": {
+   "mis_margin_pct": "22.78",
+   "leverage": "4.39"
+  },
+  "FUSION": {
+   "mis_margin_pct": "22.77",
+   "leverage": "4.39"
+  },
+  "FUSIONCX": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "GABRIEL": {
+   "mis_margin_pct": "24.85",
+   "leverage": "4.02"
+  },
+  "GAEL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GAIL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GAJA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GALAPREC": {
+   "mis_margin_pct": "22.26",
+   "leverage": "4.49"
+  },
+  "GALAXYSURF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GALLANTT": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "GANDHAR": {
+   "mis_margin_pct": "24.48",
+   "leverage": "4.08"
+  },
+  "GANECOS": {
+   "mis_margin_pct": "21.94",
+   "leverage": "4.56"
+  },
+  "GANESHCP": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "GANESHHOU": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GARFIBRES": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GARUDA": {
+   "mis_margin_pct": "23.97",
+   "leverage": "4.17"
+  },
+  "GATEWAY": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GAUDIUMIVF": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "GCSL": {
+   "mis_margin_pct": "24.46",
+   "leverage": "4.09"
+  },
+  "GENESYS": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "GENUSPOWER": {
+   "mis_margin_pct": "20.97",
+   "leverage": "4.77"
+  },
+  "GEOJITFSL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GERMAN": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "GESHIP": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GHCL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GHCLTEXTIL": {
+   "mis_margin_pct": "20.34",
+   "leverage": "4.92"
+  },
+  "GICHSGFIN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GICRE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GILLETTE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GILT5YBEES": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GIPCL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GKENERGY": {
+   "mis_margin_pct": "20.22",
+   "leverage": "4.95"
+  },
+  "GKSL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GLAND": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GLASSWALL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GLAXO": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GLENMARK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GLOBUSSPR": {
+   "mis_margin_pct": "20.47",
+   "leverage": "4.89"
+  },
+  "GMBREW": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GMDCLTD": {
+   "mis_margin_pct": "22.25",
+   "leverage": "4.49"
+  },
+  "GMMPFAUDLR": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GMRAIRPORT": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GMRP&UI": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GNA": {
+   "mis_margin_pct": "21.79",
+   "leverage": "4.59"
+  },
+  "GNFC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GNRL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "GOCLCORP": {
+   "mis_margin_pct": "21.88",
+   "leverage": "4.57"
+  },
+  "GOCOLORS": {
+   "mis_margin_pct": "22.41",
+   "leverage": "4.46"
+  },
+  "GODAVARIB": {
+   "mis_margin_pct": "22.31",
+   "leverage": "4.48"
+  },
+  "GODFRYPHLP": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GODIGIT": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GODREJAGRO": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GODREJCP": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GODREJIND": {
+   "mis_margin_pct": "20.41",
+   "leverage": "4.9"
+  },
+  "GODREJPROP": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GOKEX": {
+   "mis_margin_pct": "24.07",
+   "leverage": "4.15"
+  },
+  "GOKULAGRO": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GOLD1": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GOLDADD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GOLDAXIS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GOLDBEES": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GOLDBETA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GOLDCASE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GOLDETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GOLDIAM": {
+   "mis_margin_pct": "25.42",
+   "leverage": "3.93"
+  },
+  "GOLDIETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GOODLUCK": {
+   "mis_margin_pct": "23.4",
+   "leverage": "4.27"
+  },
+  "GOPAL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GPIL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GPPL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GPTHEALTH": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "GPTINFRA": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "GRANULES": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GRAPHITE": {
+   "mis_margin_pct": "20.97",
+   "leverage": "4.77"
+  },
+  "GRASIM": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GRAUWEIL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "GRAVITA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GREAVESCOT": {
+   "mis_margin_pct": "23.33",
+   "leverage": "4.29"
+  },
+  "GREENLAM": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "GREENPANEL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GREENPLY": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GREENPOWER": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GRINDWELL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GRINFRA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GRMOVER": {
+   "mis_margin_pct": "22.2",
+   "leverage": "4.5"
+  },
+  "GROWW": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GROWWDEFNC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GROWWGOLD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GROWWHOSPI": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GROWWLIQID": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GROWWPOWER": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GROWWRAIL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GROWWSLVR": {
+   "mis_margin_pct": "23.13",
+   "leverage": "4.32"
+  },
+  "GRPLTD": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "GRSE": {
+   "mis_margin_pct": "22.28",
+   "leverage": "4.49"
+  },
+  "GRWRHITECH": {
+   "mis_margin_pct": "24.97",
+   "leverage": "4"
+  },
+  "GSFC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GSPCROP": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GSPLTRANS": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "GUFICBIO": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GUJALKALI": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GUJENERGY": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GUJTHEM": {
+   "mis_margin_pct": "24.93",
+   "leverage": "4.01"
+  },
+  "GULFOILLUB": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GULPOLY": {
+   "mis_margin_pct": "20.96",
+   "leverage": "4.77"
+  },
+  "GVPIL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "GVT&D": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "GYFTR": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "HAL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HALDYNGL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "HAPPSTMNDS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HAPPYFORGE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HARIOMPIPE": {
+   "mis_margin_pct": "23.31",
+   "leverage": "4.29"
+  },
+  "HARSHA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HATHWAY": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HATSUN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HAVELLS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HBLENGINE": {
+   "mis_margin_pct": "22.41",
+   "leverage": "4.46"
+  },
+  "HCC": {
+   "mis_margin_pct": "23.66",
+   "leverage": "4.23"
+  },
+  "HCG": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HCLTECH": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HDBFS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HDFCAMC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HDFCBANK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HDFCBSE500": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "HDFCGOLD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HDFCLIFE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HDFCLIQUID": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HDFCMID150": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HDFCNIFBAN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HDFCNIFTY": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HDFCSENSEX": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HDFCSILVER": {
+   "mis_margin_pct": "23.4",
+   "leverage": "4.27"
+  },
+  "HDFCSML250": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HDFIRE": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "HEALTHIETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HEGAM": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "HEIDELBERG": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HEMIPROP": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HERITGFOOD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HEROMOTOCO": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HESTERBIO": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "HEXAGON": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "HEXT": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HGINFRA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HIKAL": {
+   "mis_margin_pct": "23.29",
+   "leverage": "4.29"
+  },
+  "HIMATSEIDE": {
+   "mis_margin_pct": "21.79",
+   "leverage": "4.59"
+  },
+  "HINDALCO": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HINDCOPPER": {
+   "mis_margin_pct": "23.17",
+   "leverage": "4.32"
+  },
+  "HINDOILEXP": {
+   "mis_margin_pct": "22.99",
+   "leverage": "4.35"
+  },
+  "HINDPETRO": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HINDUNILVR": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HINDWAREAP": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "HINDZINC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HIRECT": {
+   "mis_margin_pct": "25.51",
+   "leverage": "3.92"
+  },
+  "HITECH": {
+   "mis_margin_pct": "20.44",
+   "leverage": "4.89"
+  },
+  "HMAAGRO": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "HNDFDS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HNGSNGBEES": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HOMEFIRST": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HONASA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HONAUT": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HONDAPOWER": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "HORIZONIND": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HPL": {
+   "mis_margin_pct": "22.14",
+   "leverage": "4.52"
+  },
+  "HSCL": {
+   "mis_margin_pct": "20.35",
+   "leverage": "4.91"
+  },
+  "HTEL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "HUBTOWN": {
+   "mis_margin_pct": "25.21",
+   "leverage": "3.97"
+  },
+  "HUDCO": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "HUHTAMAKI": {
+   "mis_margin_pct": "24.19",
+   "leverage": "4.13"
+  },
+  "HYUNDAI": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "IBULLSLTD": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "ICICIAMC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ICICIB22": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ICICIBANK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ICICIGI": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ICICILIFE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ICIL": {
+   "mis_margin_pct": "27.51",
+   "leverage": "3.64"
+  },
+  "ICRA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "IDBI": {
+   "mis_margin_pct": "21.99",
+   "leverage": "4.55"
+  },
+  "IDEA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "IDEAFORGE": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "IDFCFIRSTB": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "IEX": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "IFBIND": {
+   "mis_margin_pct": "21.4",
+   "leverage": "4.67"
+  },
+  "IFCI": {
+   "mis_margin_pct": "26.39",
+   "leverage": "3.79"
+  },
+  "IGARASHI": {
+   "mis_margin_pct": "21.61",
+   "leverage": "4.63"
+  },
+  "IGIL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "IGL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "IGPL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "IIFL": {
+   "mis_margin_pct": "21.55",
+   "leverage": "4.64"
+  },
+  "IIFLCAPS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "IKIO": {
+   "mis_margin_pct": "25.04",
+   "leverage": "3.99"
+  },
+  "IKS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "IMAGICAA": {
+   "mis_margin_pct": "21.22",
+   "leverage": "4.71"
+  },
+  "IMFA": {
+   "mis_margin_pct": "20.69",
+   "leverage": "4.83"
+  },
+  "INA": {
+   "mis_margin_pct": "20.13",
+   "leverage": "4.97"
+  },
+  "INDGN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "INDHOTEL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "INDIACEM": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "INDIAGLYCO": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "INDIAMART": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "INDIANB": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "INDIANHUME": {
+   "mis_margin_pct": "21.58",
+   "leverage": "4.63"
+  },
+  "INDIASHLTR": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "INDIGO": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "INDIGOPNTS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "INDIQUBE": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "INDNIPPON": {
+   "mis_margin_pct": "21.69",
+   "leverage": "4.61"
+  },
+  "INDOAMIN": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "INDOBORAX": {
+   "mis_margin_pct": "24.27",
+   "leverage": "4.12"
+  },
+  "INDOCO": {
+   "mis_margin_pct": "23.61",
+   "leverage": "4.24"
+  },
+  "INDOFARM": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "INDOMIM": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "INDOSTAR": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "INDOTECH": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "INDRAMEDCO": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "INDSWFTLAB": {
+   "mis_margin_pct": "28.33",
+   "leverage": "3.53"
+  },
+  "INDUSINDBK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "INDUSTOWER": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "INFOBEAN": {
+   "mis_margin_pct": "28.73",
+   "leverage": "3.48"
+  },
+  "INFRABEES": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "INFRAIETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "INFY": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "INGERRAND": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "INNOVACAP": {
+   "mis_margin_pct": "20.04",
+   "leverage": "4.99"
+  },
+  "INOXGREEN": {
+   "mis_margin_pct": "25.34",
+   "leverage": "3.95"
+  },
+  "INOXINDIA": {
+   "mis_margin_pct": "20.94",
+   "leverage": "4.78"
+  },
+  "INOXWIND": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "INSECTICID": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "INTELLECT": {
+   "mis_margin_pct": "21.4",
+   "leverage": "4.67"
+  },
+  "INTERARCH": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "IOB": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "IOC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "IOLCP": {
+   "mis_margin_pct": "25.63",
+   "leverage": "3.9"
+  },
+  "IONEXCHANG": {
+   "mis_margin_pct": "20.06",
+   "leverage": "4.99"
+  },
+  "IPCALAB": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "IPL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "IRB": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "IRCON": {
+   "mis_margin_pct": "20.47",
+   "leverage": "4.89"
+  },
+  "IRCTC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "IREDA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "IRFC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "IRMENERGY": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "ISGEC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "IT": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ITBEES": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ITC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ITCHOTELS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ITDC": {
+   "mis_margin_pct": "24.89",
+   "leverage": "4.02"
+  },
+  "ITI": {
+   "mis_margin_pct": "21.76",
+   "leverage": "4.6"
+  },
+  "ITIETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "IVALUE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "IVZINGOLD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "IXIGO": {
+   "mis_margin_pct": "24.86",
+   "leverage": "4.02"
+  },
+  "IZMO": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "J&KBANK": {
+   "mis_margin_pct": "21.91",
+   "leverage": "4.56"
+  },
+  "JAGRAN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "JAGSNPHARM": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "JAIBALAJI": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "JAICORPLTD": {
+   "mis_margin_pct": "21.9",
+   "leverage": "4.57"
+  },
+  "JAINREC": {
+   "mis_margin_pct": "21.14",
+   "leverage": "4.73"
+  },
+  "JAMNAAUTO": {
+   "mis_margin_pct": "21.22",
+   "leverage": "4.71"
+  },
+  "JARO": {
+   "mis_margin_pct": "21.83",
+   "leverage": "4.58"
+  },
+  "JASH": {
+   "mis_margin_pct": "21.04",
+   "leverage": "4.75"
+  },
+  "JAYBARMARU": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "JAYKAY": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "JAYNECOIND": {
+   "mis_margin_pct": "24.94",
+   "leverage": "4.01"
+  },
+  "JBMA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "JGCHEM": {
+   "mis_margin_pct": "23.94",
+   "leverage": "4.18"
+  },
+  "JINDALPOLY": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "JINDALSAW": {
+   "mis_margin_pct": "23.08",
+   "leverage": "4.33"
+  },
+  "JINDALSTEL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "JINDRILL": {
+   "mis_margin_pct": "23.31",
+   "leverage": "4.29"
+  },
+  "JINDWORLD": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "JIOFIN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "JISLJALEQS": {
+   "mis_margin_pct": "24.57",
+   "leverage": "4.07"
+  },
+  "JKCEMENT": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "JKIL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "JKLAKSHMI": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "JKPAPER": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "JKTYRE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "JLHL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "JMFINANCIL": {
+   "mis_margin_pct": "20.12",
+   "leverage": "4.97"
+  },
+  "JNKINDIA": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "JNPR": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "JPL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "JPPOWER": {
+   "mis_margin_pct": "23.39",
+   "leverage": "4.28"
+  },
+  "JSFB": {
+   "mis_margin_pct": "22.15",
+   "leverage": "4.51"
+  },
+  "JSL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "JSLL": {
+   "mis_margin_pct": "24.95",
+   "leverage": "4.01"
+  },
+  "JSWCEMENT": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "JSWDULUX": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "JSWENERGY": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "JSWHL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "JSWINFRA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "JSWSTEEL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "JTEKTINDIA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "JTLIND": {
+   "mis_margin_pct": "26.31",
+   "leverage": "3.8"
+  },
+  "JUBLCPL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "JUBLFOOD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "JUBLINGREA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "JUBLPHARMA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "JUNIORBEES": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "JUNIPER": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "JUSTDIAL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "JWL": {
+   "mis_margin_pct": "21.33",
+   "leverage": "4.69"
+  },
+  "JYOTHYLAB": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "JYOTICNC": {
+   "mis_margin_pct": "22.57",
+   "leverage": "4.43"
+  },
+  "JYOTIRES": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "JYOTISTRUC": {
+   "mis_margin_pct": "28.03",
+   "leverage": "3.57"
+  },
+  "KAJARIACER": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KALAMANDIR": {
+   "mis_margin_pct": "21.27",
+   "leverage": "4.7"
+  },
+  "KALPATARU": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "KALYANKJIL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KAMDHENU": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "KANOHAR": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KANSAINER": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KAPSTON": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "KARAMTARA": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "KARURVYSYA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KAYNES": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KCP": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KDDL": {
+   "mis_margin_pct": "23.24",
+   "leverage": "4.3"
+  },
+  "KEC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KECL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "KEI": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KELLTONTEC": {
+   "mis_margin_pct": "22.17",
+   "leverage": "4.51"
+  },
+  "KENNAMET": {
+   "mis_margin_pct": "22.98",
+   "leverage": "4.35"
+  },
+  "KERNEX": {
+   "mis_margin_pct": "28.24",
+   "leverage": "3.54"
+  },
+  "KFINTECH": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KHAZANCHI": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KILITCH": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "KIMS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KINGFA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KIOCL": {
+   "mis_margin_pct": "23.88",
+   "leverage": "4.19"
+  },
+  "KIRIINDUS": {
+   "mis_margin_pct": "22.86",
+   "leverage": "4.37"
+  },
+  "KIRLFER": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KIRLOSBROS": {
+   "mis_margin_pct": "20.63",
+   "leverage": "4.85"
+  },
+  "KIRLOSENG": {
+   "mis_margin_pct": "23.39",
+   "leverage": "4.28"
+  },
+  "KIRLOSIND": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KIRLPNU": {
+   "mis_margin_pct": "20.73",
+   "leverage": "4.82"
+  },
+  "KISSHT": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KITEX": {
+   "mis_margin_pct": "24.83",
+   "leverage": "4.03"
+  },
+  "KKCL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "KLBRENG-B": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KMCSHIL": {
+   "mis_margin_pct": "23.24",
+   "leverage": "4.3"
+  },
+  "KMEW": {
+   "mis_margin_pct": "27.04",
+   "leverage": "3.7"
+  },
+  "KNACK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KNRCON": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KOLTEPATIL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KOPRAN": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "KOTAKBANK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KOVAI": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KPEL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "KPIGREEN": {
+   "mis_margin_pct": "22.87",
+   "leverage": "4.37"
+  },
+  "KPIL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KPITTECH": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KPL": {
+   "mis_margin_pct": "26.98",
+   "leverage": "3.71"
+  },
+  "KPRMILL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KRBL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KRISHANA": {
+   "mis_margin_pct": "21.41",
+   "leverage": "4.67"
+  },
+  "KRISHNADEF": {
+   "mis_margin_pct": "22.75",
+   "leverage": "4.4"
+  },
+  "KROSS": {
+   "mis_margin_pct": "24.71",
+   "leverage": "4.05"
+  },
+  "KRSNAA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KSB": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KSCL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KSHINTL": {
+   "mis_margin_pct": "22.14",
+   "leverage": "4.52"
+  },
+  "KSL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KTKBANK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KUSUMGAR": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "KWIL": {
+   "mis_margin_pct": "20.46",
+   "leverage": "4.89"
+  },
+  "LALPATHLAB": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LANDMARK": {
+   "mis_margin_pct": "21.61",
+   "leverage": "4.63"
+  },
+  "LAOPALA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LASERPOWER": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LATENTVIEW": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LAURUSLABS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LAXMIDENTL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "LAXMIINDIA": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "LCCPROJECT": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "LCL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LEAPIND": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LEMONTREE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LENSKART": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LGBBROSLTD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LGEINDIA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LICHSGFIN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LICI": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LICMFGOLD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LINCOLN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LINDEINDIA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LIQGRWBEES": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LIQUID": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LIQUID1": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LIQUIDADD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LIQUIDBEES": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LIQUIDBETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LIQUIDCASE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LIQUIDETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LIQUIDIETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LIQUIDPLUS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LLOYDSENGG": {
+   "mis_margin_pct": "25.05",
+   "leverage": "3.99"
+  },
+  "LLOYDSENT": {
+   "mis_margin_pct": "24.28",
+   "leverage": "4.12"
+  },
+  "LLOYDSME": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LMW": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LODHA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LOKESHMACH": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "LOWVOL1": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LOWVOLIETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LT": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LTF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LTFOODS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LTGILTBEES": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LTGILTCASE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LTM": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LTTS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LUMAXIND": {
+   "mis_margin_pct": "20.91",
+   "leverage": "4.78"
+  },
+  "LUMAXTECH": {
+   "mis_margin_pct": "24.41",
+   "leverage": "4.1"
+  },
+  "LUMINO": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LUPIN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "LUXIND": {
+   "mis_margin_pct": "21.54",
+   "leverage": "4.64"
+  },
+  "LXCHEM": {
+   "mis_margin_pct": "22.03",
+   "leverage": "4.54"
+  },
+  "M&M": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "M&MFIN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MACPOWER": {
+   "mis_margin_pct": "26.95",
+   "leverage": "3.71"
+  },
+  "MADRASFERT": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "MAGADSUGAR": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "MAHABANK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MAHLIFE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MAHLOG": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MAHSCOOTER": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MAHSEAMLES": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MAITHANALL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MAMATA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MANAKCOAT": {
+   "mis_margin_pct": "22.89",
+   "leverage": "4.37"
+  },
+  "MANALIPETC": {
+   "mis_margin_pct": "23.58",
+   "leverage": "4.24"
+  },
+  "MANAPPURAM": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MANBA": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "MANCREDIT": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "MANGLMCEM": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MANIKA": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "MANINDS": {
+   "mis_margin_pct": "28.75",
+   "leverage": "3.48"
+  },
+  "MANINFRA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MANIPALHOS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MANKIND": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MANORAMA": {
+   "mis_margin_pct": "22.33",
+   "leverage": "4.48"
+  },
+  "MANYAVAR": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MAPMYINDIA": {
+   "mis_margin_pct": "21.1",
+   "leverage": "4.74"
+  },
+  "MARATHON": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "MARICO": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MARINE": {
+   "mis_margin_pct": "26.97",
+   "leverage": "3.71"
+  },
+  "MARKSANS": {
+   "mis_margin_pct": "22",
+   "leverage": "4.55"
+  },
+  "MARSONS": {
+   "mis_margin_pct": "26.62",
+   "leverage": "3.76"
+  },
+  "MARUTI": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MASFIN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MASTEK": {
+   "mis_margin_pct": "20.67",
+   "leverage": "4.84"
+  },
+  "MASTERTR": {
+   "mis_margin_pct": "26.1",
+   "leverage": "3.83"
+  },
+  "MATRIMONY": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "MAXESTATES": {
+   "mis_margin_pct": "20.7",
+   "leverage": "4.83"
+  },
+  "MAXHEALTH": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MAYURUNIQ": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MAZDA": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "MAZDOCK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MBAPL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MBEL": {
+   "mis_margin_pct": "22.75",
+   "leverage": "4.4"
+  },
+  "MCLOUD": {
+   "mis_margin_pct": "27.63",
+   "leverage": "3.62"
+  },
+  "MCX": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MEDANTA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MEDIASSIST": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MEDPLUS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MEESHO": {
+   "mis_margin_pct": "20.05",
+   "leverage": "4.99"
+  },
+  "MEIL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "MENONBE": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "MERCURYEV": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "METAL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "METALIETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "METROBRAND": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "METROPOLIS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MFSL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MGL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MHRIL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MICEL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "MID150BEES": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MID150CASE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MIDCAPETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MIDCAPIETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MIDHANI": {
+   "mis_margin_pct": "22.08",
+   "leverage": "4.53"
+  },
+  "MIDSMALL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MIIL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "MINDACORP": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MKJEWELS": {
+   "mis_margin_pct": "25",
+   "leverage": "4"
+  },
+  "MMFL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "MMP": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "MMTC": {
+   "mis_margin_pct": "21.11",
+   "leverage": "4.74"
+  },
+  "MOBIKWIK": {
+   "mis_margin_pct": "24.65",
+   "leverage": "4.06"
+  },
+  "MOCAPITAL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MODEFENCE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MODIS": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "MOGOLD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MOIL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MOL": {
+   "mis_margin_pct": "22.9",
+   "leverage": "4.37"
+  },
+  "MOLBIO": {
+   "mis_margin_pct": "20.65",
+   "leverage": "4.84"
+  },
+  "MOLDTKPAC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MOM100": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MOM30IETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MOMENTUM50": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MOMMIDCAP": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MOMSBELIEF": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "MONARCH": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MONEYVIEW": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MONIFTY500": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MONQ50": {
+   "mis_margin_pct": "31.03",
+   "leverage": "3.22"
+  },
+  "MONTECARLO": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MOREALTY": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MOSCHIP": {
+   "mis_margin_pct": "24",
+   "leverage": "4.17"
+  },
+  "MOSILVER": {
+   "mis_margin_pct": "21.54",
+   "leverage": "4.64"
+  },
+  "MOSMALL250": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MOTHERSON": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MOTILALOFS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MOTISONS": {
+   "mis_margin_pct": "24.2",
+   "leverage": "4.13"
+  },
+  "MPHASIS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MPIMANIPAL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MPSLTD": {
+   "mis_margin_pct": "22.5",
+   "leverage": "4.44"
+  },
+  "MRF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MRPL": {
+   "mis_margin_pct": "24.26",
+   "leverage": "4.12"
+  },
+  "MSCIADD": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "MSCIINDIA": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "MSPL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "MSTCLTD": {
+   "mis_margin_pct": "25.56",
+   "leverage": "3.91"
+  },
+  "MSUMI": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MTARTECH": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "MTNL": {
+   "mis_margin_pct": "23.1",
+   "leverage": "4.33"
+  },
+  "MUFIN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MUKANDLTD": {
+   "mis_margin_pct": "20.25",
+   "leverage": "4.94"
+  },
+  "MUNJALAU": {
+   "mis_margin_pct": "23.24",
+   "leverage": "4.3"
+  },
+  "MUTHOOTFIN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "MUTHOOTMF": {
+   "mis_margin_pct": "21",
+   "leverage": "4.76"
+  },
+  "MVELECTRO": {
+   "mis_margin_pct": "21.2",
+   "leverage": "4.72"
+  },
+  "MWL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "NACLIND": {
+   "mis_margin_pct": "27.35",
+   "leverage": "3.66"
+  },
+  "NAM-INDIA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NATCOPHARM": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NATIONALUM": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NAUKRI": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NAVA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NAVINFLUOR": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NAVKARCORP": {
+   "mis_margin_pct": "21.68",
+   "leverage": "4.61"
+  },
+  "NAVNETEDUL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NAZARA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NBCC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NCC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NCLIND": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "NDRAUTO": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "NELCAST": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "NELCO": {
+   "mis_margin_pct": "23.32",
+   "leverage": "4.29"
+  },
+  "NEOGEN": {
+   "mis_margin_pct": "23.87",
+   "leverage": "4.19"
+  },
+  "NEPHROPLUS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NESCO": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NESTLEIND": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NETWEB": {
+   "mis_margin_pct": "25.81",
+   "leverage": "3.87"
+  },
+  "NETWORK18": {
+   "mis_margin_pct": "20.04",
+   "leverage": "4.99"
+  },
+  "NEULANDLAB": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NEWGEN": {
+   "mis_margin_pct": "24.14",
+   "leverage": "4.14"
+  },
+  "NEXT50": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NEXT50BETA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NEXT50IETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NFL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NGLFINE": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "NH": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NHPC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NIACL": {
+   "mis_margin_pct": "24.42",
+   "leverage": "4.1"
+  },
+  "NIBE": {
+   "mis_margin_pct": "25.8",
+   "leverage": "3.88"
+  },
+  "NIF100BEES": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NIFTY1": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NIFTYAXIS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NIFTYBEES": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NIFTYBETA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NIFTYCASE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NIFTYETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NIFTYIETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NIITLTD": {
+   "mis_margin_pct": "24.9",
+   "leverage": "4.02"
+  },
+  "NIITMTS": {
+   "mis_margin_pct": "20.76",
+   "leverage": "4.82"
+  },
+  "NILKAMAL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NIRLON": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "NITCO": {
+   "mis_margin_pct": "24.29",
+   "leverage": "4.12"
+  },
+  "NITINSPIN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NIVABUPA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NLCINDIA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NMDC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NOCIL": {
+   "mis_margin_pct": "20.53",
+   "leverage": "4.87"
+  },
+  "NORTHARC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NPST": {
+   "mis_margin_pct": "24.62",
+   "leverage": "4.06"
+  },
+  "NRBBEARING": {
+   "mis_margin_pct": "21.03",
+   "leverage": "4.76"
+  },
+  "NSDL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NSE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NSLNISP": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NTPC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NTPCGREEN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NUVAMA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NUVOCO": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "NYKAA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "OAL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "OBEROIRLTY": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "OCCLLTD": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "OFSS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "OIL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "OILIETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "OLAELEC": {
+   "mis_margin_pct": "27.95",
+   "leverage": "3.58"
+  },
+  "OLECTRA": {
+   "mis_margin_pct": "20.6",
+   "leverage": "4.85"
+  },
+  "OMAXE": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "ONEPOINT": {
+   "mis_margin_pct": "21.8",
+   "leverage": "4.59"
+  },
+  "ONESOURCE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ONGC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ONIDA": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "ONMOBILE": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "OPTIEMUS": {
+   "mis_margin_pct": "29",
+   "leverage": "3.45"
+  },
+  "ORCHPHARMA": {
+   "mis_margin_pct": "22.44",
+   "leverage": "4.46"
+  },
+  "ORICONENT": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "ORIENTBELL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "ORIENTCABL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "ORIENTCEM": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ORIENTELEC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ORIENTHOT": {
+   "mis_margin_pct": "21.76",
+   "leverage": "4.6"
+  },
+  "ORIENTTECH": {
+   "mis_margin_pct": "24.68",
+   "leverage": "4.05"
+  },
+  "ORIRAIL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "ORISSAMINE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ORKLAINDIA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "OSWALPUMPS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PACEDIGITK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PAGEIND": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PAISALO": {
+   "mis_margin_pct": "21.5",
+   "leverage": "4.65"
+  },
+  "PANACEABIO": {
+   "mis_margin_pct": "25.39",
+   "leverage": "3.94"
+  },
+  "PANAMAPET": {
+   "mis_margin_pct": "23.91",
+   "leverage": "4.18"
+  },
+  "PARACABLES": {
+   "mis_margin_pct": "28.06",
+   "leverage": "3.56"
+  },
+  "PARADEEP": {
+   "mis_margin_pct": "20.94",
+   "leverage": "4.78"
+  },
+  "PARAGMILK": {
+   "mis_margin_pct": "24.82",
+   "leverage": "4.03"
+  },
+  "PARAS": {
+   "mis_margin_pct": "24.75",
+   "leverage": "4.04"
+  },
+  "PARASHLTH": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "PARKHOSPS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PARKHOTELS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PASUPTAC": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "PATANJALI": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PATELENG": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PATELRMART": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "PAUSHAKLTD": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "PAYTM": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PCBL": {
+   "mis_margin_pct": "21.16",
+   "leverage": "4.73"
+  },
+  "PCJEWELLER": {
+   "mis_margin_pct": "27.37",
+   "leverage": "3.65"
+  },
+  "PDMJEPAPER": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "PDSL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PENIND": {
+   "mis_margin_pct": "22.75",
+   "leverage": "4.4"
+  },
+  "PERMAGN": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "PERNIASPOP": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PERSISTENT": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PETRONET": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PFC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PFIZER": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PFOCUS": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "PFS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PGEL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PGHH": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PGHL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PGIL": {
+   "mis_margin_pct": "23.97",
+   "leverage": "4.17"
+  },
+  "PHARMABEES": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PHOENIXLTD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PICCADIL": {
+   "mis_margin_pct": "21.13",
+   "leverage": "4.73"
+  },
+  "PIDILITIND": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PIIND": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PINELABS": {
+   "mis_margin_pct": "21.08",
+   "leverage": "4.74"
+  },
+  "PIRAMALFIN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PITTIENG": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PIXTRANS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PLATIND": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "PNB": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PNBGILTS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PNBHOUSING": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PNCINFRA": {
+   "mis_margin_pct": "22",
+   "leverage": "4.55"
+  },
+  "PNGJL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PNGSREVA": {
+   "mis_margin_pct": "23.06",
+   "leverage": "4.34"
+  },
+  "POCL": {
+   "mis_margin_pct": "23.3",
+   "leverage": "4.29"
+  },
+  "POKARNA": {
+   "mis_margin_pct": "25.92",
+   "leverage": "3.86"
+  },
+  "POLICYBZR": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "POLYCAB": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "POLYMED": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "POLYPLEX": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "POONAWALLA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "POWERGRID": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "POWERICA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "POWERINDIA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "POWERMECH": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PPLPHARMA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PRABHA": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "PRADPME": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "PRAJIND": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PRAKASH": {
+   "mis_margin_pct": "20.4",
+   "leverage": "4.9"
+  },
+  "PRANAV": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "PRASOLCHEM": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "PRAVEG": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "PRECAM": {
+   "mis_margin_pct": "23.35",
+   "leverage": "4.28"
+  },
+  "PRECWIRE": {
+   "mis_margin_pct": "26.7",
+   "leverage": "3.75"
+  },
+  "PREMEXPLN": {
+   "mis_margin_pct": "25.89",
+   "leverage": "3.86"
+  },
+  "PREMIERENE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PREMIERPOL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "PRESTIGE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PRICOLLTD": {
+   "mis_margin_pct": "20.95",
+   "leverage": "4.77"
+  },
+  "PRIMESECU": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "PRINCEPIPE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PRIVISCL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PROSTARM": {
+   "mis_margin_pct": "21.02",
+   "leverage": "4.76"
+  },
+  "PROTEAN": {
+   "mis_margin_pct": "24.18",
+   "leverage": "4.14"
+  },
+  "PRSMJOHNSN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PRUDENT": {
+   "mis_margin_pct": "20.2",
+   "leverage": "4.95"
+  },
+  "PSB": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PSPPROJECT": {
+   "mis_margin_pct": "20.55",
+   "leverage": "4.87"
+  },
+  "PSUBANK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PSUBANKADD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PSUBNKBEES": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PSUBNKIETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PTC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PTCIL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PURVA": {
+   "mis_margin_pct": "21.67",
+   "leverage": "4.61"
+  },
+  "PVRINOX": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PVSL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "PVTBANIETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "PWL": {
+   "mis_margin_pct": "20.79",
+   "leverage": "4.81"
+  },
+  "QGOLDHALF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "QPOWER": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "QUADFUTURE": {
+   "mis_margin_pct": "27.9",
+   "leverage": "3.58"
+  },
+  "QUESS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "QUICKHEAL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "RACLGEAR": {
+   "mis_margin_pct": "24.31",
+   "leverage": "4.11"
+  },
+  "RADICO": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "RAILTEL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "RAIN": {
+   "mis_margin_pct": "24.65",
+   "leverage": "4.06"
+  },
+  "RAINBOW": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "RAJOOENG": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "RAJRATAN": {
+   "mis_margin_pct": "22.05",
+   "leverage": "4.54"
+  },
+  "RALLIS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "RAMCOCEM": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "RAMCOIND": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "RAMKY": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "RAMRAT": {
+   "mis_margin_pct": "21.59",
+   "leverage": "4.63"
+  },
+  "RANEHOLDIN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "RATEGAIN": {
+   "mis_margin_pct": "21.11",
+   "leverage": "4.74"
+  },
+  "RATNAMANI": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "RATNAVEER": {
+   "mis_margin_pct": "24.25",
+   "leverage": "4.12"
+  },
+  "RAYMOND": {
+   "mis_margin_pct": "25.2",
+   "leverage": "3.97"
+  },
+  "RAYMONDLSL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "RAYMONDREL": {
+   "mis_margin_pct": "25.47",
+   "leverage": "3.93"
+  },
+  "RBA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "RBLBANK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "RCF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "RECLTD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "REDINGTON": {
+   "mis_margin_pct": "23.02",
+   "leverage": "4.34"
+  },
+  "REDTAPE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "REFEX": {
+   "mis_margin_pct": "23.35",
+   "leverage": "4.28"
+  },
+  "REGAAL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "RELAXO": {
+   "mis_margin_pct": "20.49",
+   "leverage": "4.88"
+  },
+  "RELIANCE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "RELIGARE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "RELTD": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "RENTOMOJO": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "RENUKA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "REPCOHOME": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "RESPONIND": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "RGL": {
+   "mis_margin_pct": "27.42",
+   "leverage": "3.65"
+  },
+  "RHIM": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "RICOAUTO": {
+   "mis_margin_pct": "25.8",
+   "leverage": "3.88"
+  },
+  "RIIL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "RIR": {
+   "mis_margin_pct": "25.95",
+   "leverage": "3.85"
+  },
+  "RISHABH": {
+   "mis_margin_pct": "23.98",
+   "leverage": "4.17"
+  },
+  "RITES": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "RKFORGE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "RML": {
+   "mis_margin_pct": "21.85",
+   "leverage": "4.58"
+  },
+  "ROLEXRINGS": {
+   "mis_margin_pct": "22.16",
+   "leverage": "4.51"
+  },
+  "ROSSARI": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ROSSTECH": {
+   "mis_margin_pct": "26.13",
+   "leverage": "3.83"
+  },
+  "ROTO": {
+   "mis_margin_pct": "21.91",
+   "leverage": "4.56"
+  },
+  "ROUTE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "RPEL": {
+   "mis_margin_pct": "24.82",
+   "leverage": "4.03"
+  },
+  "RPGLIFE": {
+   "mis_margin_pct": "22.2",
+   "leverage": "4.5"
+  },
+  "RPOWER": {
+   "mis_margin_pct": "22.87",
+   "leverage": "4.37"
+  },
+  "RPSGVENT": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "RPTECH": {
+   "mis_margin_pct": "23.62",
+   "leverage": "4.23"
+  },
+  "RRKABEL": {
+   "mis_margin_pct": "21.11",
+   "leverage": "4.74"
+  },
+  "RSL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "RSYSTEMS": {
+   "mis_margin_pct": "23.06",
+   "leverage": "4.34"
+  },
+  "RTNINDIA": {
+   "mis_margin_pct": "21.09",
+   "leverage": "4.74"
+  },
+  "RTNPOWER": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "RUBICON": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "RUPA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "RUSTOMJEE": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "RVNL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SAATVIKGL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SAFARI": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SAGILITY": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SAIL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SAILIFE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SAIPARENT": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SAKAR": {
+   "mis_margin_pct": "25.76",
+   "leverage": "3.88"
+  },
+  "SAKSOFT": {
+   "mis_margin_pct": "23.03",
+   "leverage": "4.34"
+  },
+  "SALZERELEC": {
+   "mis_margin_pct": "22.65",
+   "leverage": "4.42"
+  },
+  "SAMBHV": {
+   "mis_margin_pct": "20.97",
+   "leverage": "4.77"
+  },
+  "SAMHI": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SAMMAANCAP": {
+   "mis_margin_pct": "20.27",
+   "leverage": "4.93"
+  },
+  "SANATHAN": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SANDHAR": {
+   "mis_margin_pct": "21.14",
+   "leverage": "4.73"
+  },
+  "SANDUMA": {
+   "mis_margin_pct": "22.13",
+   "leverage": "4.52"
+  },
+  "SANGAMIND": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SANGHVIMOV": {
+   "mis_margin_pct": "26.31",
+   "leverage": "3.8"
+  },
+  "SANOFI": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SANOFICONR": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SANSERA": {
+   "mis_margin_pct": "20.12",
+   "leverage": "4.97"
+  },
+  "SANSTAR": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SAPPHIRE": {
+   "mis_margin_pct": "20.62",
+   "leverage": "4.85"
+  },
+  "SARDAEN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SAREGAMA": {
+   "mis_margin_pct": "20.81",
+   "leverage": "4.81"
+  },
+  "SASKEN": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SATIN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SBC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SBCL": {
+   "mis_margin_pct": "25.93",
+   "leverage": "3.86"
+  },
+  "SBFC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SBI10YGILT": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SBIBANKNIF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SBICARD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SBIFUNDS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SBIGOLD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SBILIFE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SBILIQETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SBIN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SBINEXT50": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SBINIFTY50": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SBISENSEX": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SBISILVER": {
+   "mis_margin_pct": "22.67",
+   "leverage": "4.41"
+  },
+  "SCHAEFFLER": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SCHNEIDER": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SCI": {
+   "mis_margin_pct": "21.67",
+   "leverage": "4.61"
+  },
+  "SCODATUBES": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SDBL": {
+   "mis_margin_pct": "24.01",
+   "leverage": "4.16"
+  },
+  "SEAMECLTD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SEDEMAC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SEIL": {
+   "mis_margin_pct": "25.45",
+   "leverage": "3.93"
+  },
+  "SENCO": {
+   "mis_margin_pct": "21.82",
+   "leverage": "4.58"
+  },
+  "SENORES": {
+   "mis_margin_pct": "20.97",
+   "leverage": "4.77"
+  },
+  "SENSEXBEES": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SENSEXBETA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SENSEXIETF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SERVOTECH": {
+   "mis_margin_pct": "23.66",
+   "leverage": "4.23"
+  },
+  "SESHAPAPER": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SFCTECH": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SFL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SGFIN": {
+   "mis_margin_pct": "21.84",
+   "leverage": "4.58"
+  },
+  "SGMART": {
+   "mis_margin_pct": "20.49",
+   "leverage": "4.88"
+  },
+  "SHADOWFAX": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SHAILY": {
+   "mis_margin_pct": "22.6",
+   "leverage": "4.42"
+  },
+  "SHAKTIPUMP": {
+   "mis_margin_pct": "21.84",
+   "leverage": "4.58"
+  },
+  "SHALBY": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SHALPAINTS": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SHANKESH": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SHANTIGOLD": {
+   "mis_margin_pct": "24.64",
+   "leverage": "4.06"
+  },
+  "SHARDACROP": {
+   "mis_margin_pct": "23.29",
+   "leverage": "4.29"
+  },
+  "SHARDAMOTR": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SHAREINDIA": {
+   "mis_margin_pct": "23.46",
+   "leverage": "4.26"
+  },
+  "SHILCTECH": {
+   "mis_margin_pct": "24.61",
+   "leverage": "4.06"
+  },
+  "SHILPAMED": {
+   "mis_margin_pct": "22.12",
+   "leverage": "4.52"
+  },
+  "SHINDL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SHIPROCKET": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SHK": {
+   "mis_margin_pct": "21.62",
+   "leverage": "4.63"
+  },
+  "SHOPERSTOP": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SHREECEM": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SHREEJISPG": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SHREEPUSHK": {
+   "mis_margin_pct": "25.02",
+   "leverage": "4"
+  },
+  "SHRIPISTON": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SHRIRAMFIN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SHRIRAMPPS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SHUKRAMED": {
+   "mis_margin_pct": "26.77",
+   "leverage": "3.74"
+  },
+  "SHYAMMETL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SIEMENS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SIGACHI": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SIGNATURE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SIGNPOST": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SIKA": {
+   "mis_margin_pct": "25.18",
+   "leverage": "3.97"
+  },
+  "SILVER": {
+   "mis_margin_pct": "22.57",
+   "leverage": "4.43"
+  },
+  "SILVER1": {
+   "mis_margin_pct": "22.99",
+   "leverage": "4.35"
+  },
+  "SILVERADD": {
+   "mis_margin_pct": "22.59",
+   "leverage": "4.43"
+  },
+  "SILVERAG": {
+   "mis_margin_pct": "22.76",
+   "leverage": "4.39"
+  },
+  "SILVERAXIS": {
+   "mis_margin_pct": "22.37",
+   "leverage": "4.47"
+  },
+  "SILVERBEES": {
+   "mis_margin_pct": "22.46",
+   "leverage": "4.45"
+  },
+  "SILVERBETA": {
+   "mis_margin_pct": "22.65",
+   "leverage": "4.42"
+  },
+  "SILVERBND": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SILVERCASE": {
+   "mis_margin_pct": "21.97",
+   "leverage": "4.55"
+  },
+  "SILVERIETF": {
+   "mis_margin_pct": "22.01",
+   "leverage": "4.54"
+  },
+  "SILVERTUC": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SIMPLEXINF": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SINDHUTRAD": {
+   "mis_margin_pct": "24.05",
+   "leverage": "4.16"
+  },
+  "SINGERIND": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SIRCA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SIS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SIYSIL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SJS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SJVN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SKFINDIA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SKFINDUS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SKIPPER": {
+   "mis_margin_pct": "21.62",
+   "leverage": "4.63"
+  },
+  "SKMEGGPROD": {
+   "mis_margin_pct": "27.28",
+   "leverage": "3.67"
+  },
+  "SKYGOLD": {
+   "mis_margin_pct": "25.37",
+   "leverage": "3.94"
+  },
+  "SKYWAYS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SMALLCAP": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SMARTWORKS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SMCGLOBAL": {
+   "mis_margin_pct": "22.87",
+   "leverage": "4.37"
+  },
+  "SML100CASE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SMSPHARMA": {
+   "mis_margin_pct": "23.54",
+   "leverage": "4.25"
+  },
+  "SMT": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SOBHA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SOLARA": {
+   "mis_margin_pct": "23.37",
+   "leverage": "4.28"
+  },
+  "SOLARINDS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SOLARWORLD": {
+   "mis_margin_pct": "20.89",
+   "leverage": "4.79"
+  },
+  "SOLEX": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SOMANYCERA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SONA": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SONACOMS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SONATSOFTW": {
+   "mis_margin_pct": "22.14",
+   "leverage": "4.52"
+  },
+  "SOTL": {
+   "mis_margin_pct": "23.36",
+   "leverage": "4.28"
+  },
+  "SOUTHBANK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SOUTHWEST": {
+   "mis_margin_pct": "25.29",
+   "leverage": "3.95"
+  },
+  "SPAL": {
+   "mis_margin_pct": "23.68",
+   "leverage": "4.22"
+  },
+  "SPANDANA": {
+   "mis_margin_pct": "21.84",
+   "leverage": "4.58"
+  },
+  "SPARC": {
+   "mis_margin_pct": "25.15",
+   "leverage": "3.98"
+  },
+  "SPIC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SPLPETRO": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SPMLINFRA": {
+   "mis_margin_pct": "24.13",
+   "leverage": "4.14"
+  },
+  "SPORTKING": {
+   "mis_margin_pct": "24.68",
+   "leverage": "4.05"
+  },
+  "SRF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SRIT": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SRM": {
+   "mis_margin_pct": "21.38",
+   "leverage": "4.68"
+  },
+  "SSRETAIL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SSWL": {
+   "mis_margin_pct": "23.52",
+   "leverage": "4.25"
+  },
+  "STANLEY": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "STAR": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "STARCEMENT": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "STARHEALTH": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "STEAMHOUSE": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "STEELCAS": {
+   "mis_margin_pct": "22.15",
+   "leverage": "4.51"
+  },
+  "STEELXIND": {
+   "mis_margin_pct": "21.54",
+   "leverage": "4.64"
+  },
+  "STOVEKRAFT": {
+   "mis_margin_pct": "20.53",
+   "leverage": "4.87"
+  },
+  "STUDDS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "STYL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "STYLAMIND": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "STYRENIX": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SUBEXLTD": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SUBROS": {
+   "mis_margin_pct": "21.21",
+   "leverage": "4.71"
+  },
+  "SUDARCOLOR": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SUDARSCHEM": {
+   "mis_margin_pct": "20.43",
+   "leverage": "4.89"
+  },
+  "SUDEEPPHRM": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SULA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SUMICHEM": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SUNDARMFIN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SUNDRMFAST": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SUNDROP": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SUNPHARMA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SUNSHINE": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SUNTECK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SUNTV": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SUPRAJIT": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SUPREMEIND": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SUPRIYA": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SURAJEST": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SURAKSHA": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SURYAROSNI": {
+   "mis_margin_pct": "20.08",
+   "leverage": "4.98"
+  },
+  "SURYODAY": {
+   "mis_margin_pct": "20.31",
+   "leverage": "4.92"
+  },
+  "SUVEN": {
+   "mis_margin_pct": "27.2",
+   "leverage": "3.68"
+  },
+  "SUYOG": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SUZLON": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SWANCORP": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SWARAJENG": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SWASTIKAIN": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SWIGGY": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SWSOLAR": {
+   "mis_margin_pct": "21.68",
+   "leverage": "4.61"
+  },
+  "SYMBIOTEC": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "SYMPHONY": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SYNCOMF": {
+   "mis_margin_pct": "24.55",
+   "leverage": "4.07"
+  },
+  "SYNGENE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "SYRMA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TAALTECH": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "TAJGVK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TALBROAUTO": {
+   "mis_margin_pct": "20.78",
+   "leverage": "4.81"
+  },
+  "TANAA": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "TANFACIND": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "TANLA": {
+   "mis_margin_pct": "21.89",
+   "leverage": "4.57"
+  },
+  "TARC": {
+   "mis_margin_pct": "21",
+   "leverage": "4.76"
+  },
+  "TARIL": {
+   "mis_margin_pct": "25.86",
+   "leverage": "3.87"
+  },
+  "TARSONS": {
+   "mis_margin_pct": "23.74",
+   "leverage": "4.21"
+  },
+  "TASTYBITE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TATACAP": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TATACHEM": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TATACOMM": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TATACONSUM": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TATAELXSI": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TATAGOLD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TATAINVEST": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TATAPOWER": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TATASTEEL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TATATECH": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TATSILV": {
+   "mis_margin_pct": "23.05",
+   "leverage": "4.34"
+  },
+  "TATVA": {
+   "mis_margin_pct": "24.3",
+   "leverage": "4.12"
+  },
+  "TBOTEK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TCC": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "TCI": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TCIEXP": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "TCPLPACK": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "TCS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TDPOWERSYS": {
+   "mis_margin_pct": "27.64",
+   "leverage": "3.62"
+  },
+  "TEAMLEASE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TECHM": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TECHNOCRAF": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TECHNOE": {
+   "mis_margin_pct": "20.93",
+   "leverage": "4.78"
+  },
+  "TEGA": {
+   "mis_margin_pct": "20.07",
+   "leverage": "4.98"
+  },
+  "TEJASNET": {
+   "mis_margin_pct": "24.84",
+   "leverage": "4.03"
+  },
+  "TEMBO": {
+   "mis_margin_pct": "21.27",
+   "leverage": "4.7"
+  },
+  "TEMPSENS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TENNIND": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TEXINFRA": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "TEXRAIL": {
+   "mis_margin_pct": "22.97",
+   "leverage": "4.35"
+  },
+  "TFCILTD": {
+   "mis_margin_pct": "22.41",
+   "leverage": "4.46"
+  },
+  "TGVSL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "THANGAMAYL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "THEJO": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "THELEELA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "THERMAX": {
+   "mis_margin_pct": "20.44",
+   "leverage": "4.89"
+  },
+  "THOMASCOOK": {
+   "mis_margin_pct": "22.01",
+   "leverage": "4.54"
+  },
+  "THYROCARE": {
+   "mis_margin_pct": "20.39",
+   "leverage": "4.9"
+  },
+  "TI": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TIIL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TIINDIA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TIMETECHNO": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TIMEX": {
+   "mis_margin_pct": "25.51",
+   "leverage": "3.92"
+  },
+  "TIMKEN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TINNARUBR": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "TIPSMUSIC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TIRUMALCHM": {
+   "mis_margin_pct": "21.59",
+   "leverage": "4.63"
+  },
+  "TITAGARH": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TITAN": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TMB": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TMCV": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TMPV": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TNPETRO": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TNPL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TONBO": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "TOP100CASE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TOP10ADD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TORNTPHARM": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TORNTPOWER": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TRANSRAILL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TRAVELFOOD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TRENT": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TRIDENT": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TRITURBINE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TRIVENI": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "TRUALT": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TSFINV": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TTKHLTCARE": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "TTKPRESTIG": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TTML": {
+   "mis_margin_pct": "23.51",
+   "leverage": "4.25"
+  },
+  "TVSELECT": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "TVSHLTD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TVSMOTOR": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "TVSSCS": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "TVSSRICHAK": {
+   "mis_margin_pct": "20.19",
+   "leverage": "4.95"
+  },
+  "UBL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "UCOBANK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "UDS": {
+   "mis_margin_pct": "20.89",
+   "leverage": "4.79"
+  },
+  "UFLEX": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "UGROCAP": {
+   "mis_margin_pct": "20.11",
+   "leverage": "4.97"
+  },
+  "UJJIVANSFB": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ULTRACEMCO": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ULTRAMAR": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "UNICHEMLAB": {
+   "mis_margin_pct": "22.95",
+   "leverage": "4.36"
+  },
+  "UNIECOM": {
+   "mis_margin_pct": "20.05",
+   "leverage": "4.99"
+  },
+  "UNIMECH": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "UNIONBANK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "UNIPARTS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "UNITDSPR": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "UNITEDPOLY": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "UNIVCABLES": {
+   "mis_margin_pct": "28.12",
+   "leverage": "3.56"
+  },
+  "UNOMINDA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "UPL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "URBANCO": {
+   "mis_margin_pct": "20.85",
+   "leverage": "4.8"
+  },
+  "USHAMART": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "UTIAMC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "UTKARSHBNK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "UTLSOLAR": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "UTTAMSUGAR": {
+   "mis_margin_pct": "26.69",
+   "leverage": "3.75"
+  },
+  "V2RETAIL": {
+   "mis_margin_pct": "26.86",
+   "leverage": "3.72"
+  },
+  "VADILALIND": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "VAIBHAVGBL": {
+   "mis_margin_pct": "20.92",
+   "leverage": "4.78"
+  },
+  "VALIANT": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "VALIANTORG": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "VAML": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "VARMORA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "VARROC": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "VASCONEQ": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "VBL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "VEDL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "VEDPOWER": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "VEEDOL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "VEEGALAND": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "VENKEYS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "VENUSPIPES": {
+   "mis_margin_pct": "22.66",
+   "leverage": "4.41"
+  },
+  "VESUVIUS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "VGUARD": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "VIDYAWIRES": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "VIJAYA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "VIKRAMSOLR": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "VIKRAN": {
+   "mis_margin_pct": "21.59",
+   "leverage": "4.63"
+  },
+  "VIMTALABS": {
+   "mis_margin_pct": "23.86",
+   "leverage": "4.19"
+  },
+  "VINATIORGA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "VINCOFE": {
+   "mis_margin_pct": "21.49",
+   "leverage": "4.65"
+  },
+  "VINDHYATEL": {
+   "mis_margin_pct": "26.95",
+   "leverage": "3.71"
+  },
+  "VIPIND": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "VISHNU": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "VIVIANA": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "VIYASH": {
+   "mis_margin_pct": "21.38",
+   "leverage": "4.68"
+  },
+  "VMART": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "VMM": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "VOEPL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "VOGL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "VOLTAMP": {
+   "mis_margin_pct": "20.43",
+   "leverage": "4.89"
+  },
+  "VOLTAS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "VRLLOG": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "VSSL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "VSTIND": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "VSTTILLERS": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "VTL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "WAAREEENER": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "WAAREERTL": {
+   "mis_margin_pct": "20.88",
+   "leverage": "4.79"
+  },
+  "WABAG": {
+   "mis_margin_pct": "21.52",
+   "leverage": "4.65"
+  },
+  "WAKEFIT": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "WALCHANNAG": {
+   "mis_margin_pct": "26.83",
+   "leverage": "3.73"
+  },
+  "WANBURY": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "WCIL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "WELCORP": {
+   "mis_margin_pct": "22.74",
+   "leverage": "4.4"
+  },
+  "WELENT": {
+   "mis_margin_pct": "20.01",
+   "leverage": "5"
+  },
+  "WELSPLSOL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "WELSPUNLIV": {
+   "mis_margin_pct": "22.64",
+   "leverage": "4.42"
+  },
+  "WENDT": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "WESTLIFE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "WEWORK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "WHEELS": {
+   "mis_margin_pct": "24.9",
+   "leverage": "4.02"
+  },
+  "WHIRLPOOL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "WINDLAS": {
+   "mis_margin_pct": "20.28",
+   "leverage": "4.93"
+  },
+  "WINDMACHIN": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "WIPRO": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "WOCKPHARMA": {
+   "mis_margin_pct": "23.65",
+   "leverage": "4.23"
+  },
+  "WONDERLA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "WPIL": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "WSTCSTPAPR": {
+   "mis_margin_pct": "24.52",
+   "leverage": "4.08"
+  },
+  "XPROINDIA": {
+   "mis_margin_pct": "24.37",
+   "leverage": "4.1"
+  },
+  "YASHO": {
+   "mis_margin_pct": "28.52",
+   "leverage": "3.51"
+  },
+  "YATHARTH": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "YESBANK": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "YUKEN": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "ZAGGLE": {
+   "mis_margin_pct": "26.66",
+   "leverage": "3.75"
+  },
+  "ZEEL": {
+   "mis_margin_pct": "24.35",
+   "leverage": "4.11"
+  },
+  "ZENSARTECH": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ZENTEC": {
+   "mis_margin_pct": "20.6",
+   "leverage": "4.85"
+  },
+  "ZFCVINDIA": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ZOTA": {
+   "mis_margin_pct": "22.51",
+   "leverage": "4.44"
+  },
+  "ZUARI": {
+   "mis_margin_pct": "21.2",
+   "leverage": "4.72"
+  },
+  "ZUARIIND": {
+   "mis_margin_pct": "50",
+   "leverage": "2"
+  },
+  "ZYDUSLIFE": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  },
+  "ZYDUSWELL": {
+   "mis_margin_pct": "20",
+   "leverage": "5"
+  }
+ }
+}

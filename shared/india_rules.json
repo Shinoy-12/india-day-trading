@@ -1,0 +1,76 @@
+{
+  "_note": "Every number here changes by SEBI/NSE circular or broker policy. Each block carries a 'verified' date: set it when you check the source. market_in.py warns on any block whose 'verified' is null.",
+  "session": {
+    "verified": "2026-11-24",
+    "source": "https://support.zerodha.com/.../intraday-auto-square-off-timings and .../closing-auction-session",
+    "timezone": "Asia/Kolkata",
+    "pre_open": "09:00",
+    "open": "09:15",
+    "close": "15:30",
+    "default_flat_by": "15:05",
+    "broker_square_off": "15:25",
+    "cas": {
+      "_note": "SEBI Closing Auction Session, effective 2026-08-03, Phase 1 = F&O stocks only. Continuous trading in these stocks stops at 15:15; 15:15-15:35 is the auction.",
+      "applies_to": "stocks in the F&O segment",
+      "continuous_close": "15:15",
+      "broker_square_off": "15:12",
+      "gtt_and_alerts_until": "15:15"
+    },
+    "auto_square_off_charge": "50 + 18% GST per order squared off by Zerodha",
+    "no_new_mis_after_square_off": true
+  },
+  "tick_bands": {
+    "verified": "2026-11-24",
+    "source": "Kite instrument master (tick_size field), sampled 2026-11-23",
+    "_note": "Tick size is set per stock by NSE, not purely by today's price. Always pass the stock's tick_size from Kite to market_in.tick_size(); these bands are only an approximate fallback. Observed: IDEA 11.91->0.01, ITC 301->0.05, SBIN 1132->0.05, TCS 2460->0.10, EICHERMOT 8172->0.50, MARUTI 14010->1, PAGEIND 30100->5, MRF 129605->5.",
+    "_format": "[upper_price_exclusive, tick]; last band uses null for no upper limit",
+    "bands": [
+      [
+        250,
+        "0.01"
+      ],
+      [
+        2000,
+        "0.05"
+      ],
+      [
+        5000,
+        "0.10"
+      ],
+      [
+        10000,
+        "0.50"
+      ],
+      [
+        20000,
+        "1.00"
+      ],
+      [
+        null,
+        "5.00"
+      ]
+    ]
+  },
+  "costs_intraday_equity": {
+    "verified": "2026-11-24",
+    "source": "https://zerodha.com/charges",
+    "brokerage_pct": "0.03",
+    "brokerage_cap": "20",
+    "stt_sell_pct": "0.025",
+    "exchange_txn_pct": "0.00307",
+    "exchange_txn_pct_bse": "0.00375",
+    "sebi_per_crore": "10",
+    "stamp_buy_pct": "0.003",
+    "gst_pct": "18"
+  },
+  "intraday_leverage": {
+    "verified": "2026-11-24",
+    "source": "https://zerodha.com/margin-calculator/Equity/",
+    "_note": "Per stock: see zerodha_mis_margins.json (1639 stocks, mostly 5x, ~260 at 2x). A stock not in that file cannot be traded MIS.",
+    "max_multiple": "5",
+    "per_stock_file": "zerodha_mis_margins.json"
+  },
+  "tradable_series": [
+    "EQ"
+  ]
+}

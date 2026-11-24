@@ -1,0 +1,11 @@
+{
+  "source": "Example weights for the format only: not a recommendation and not anyone's real holdings",
+  "as_of": "2026-11-24",
+  "weights": [
+    {"ticker": "RELIANCE", "name": "Reliance Industries", "weight": 30},
+    {"ticker": "HDFCBANK", "name": "HDFC Bank", "weight": 25},
+    {"ticker": "TCS", "name": "Tata Consultancy Services", "weight": 20},
+    {"ticker": "INFY", "name": "Infosys", "weight": 15},
+    {"ticker": "ITC", "name": "ITC", "weight": 10}
+  ]
+}
