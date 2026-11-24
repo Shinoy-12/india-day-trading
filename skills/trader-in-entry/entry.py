@@ -69,6 +69,7 @@ for _p in (os.path.join(_HERE, "..", "..", "shared"), _HERE):
     if os.path.isfile(os.path.join(_p, "market_in.py")):
         sys.path.insert(0, _p)
 import market_in  # noqa: E402
+import kite_bars  # noqa: E402
 
 
 UA = "Mozilla/5.0 (compatible; india-day-trader-skill)"
@@ -335,7 +336,9 @@ def get_chart(sym, interval, day=None, offline=None, today=None):
     else:
         today = today or to_local(utc_now()).date()
         text = yahoo_get(chart_path(sym, chart_range(day or today, today, interval), interval))
+    text, patched = kite_bars.patch_text(text, sym, interval)
     ch = parse_chart(text, sym)
+    ch["patched"] = patched
     if ch["symbol"] != market_in.kite_symbol(sym)[1]:
         raise EntryError("the chart file holds %s, not %s" % (ch["symbol"], sym))
     gran = ch["meta"].get("dataGranularity")
@@ -386,7 +389,8 @@ def evaluate(chart, now_utc, setup="orb", or_minutes=15, interval="5m", level=No
            "interval": interval, "or_minutes": or_minutes, "now": local.strftime("%Y-%m-%d %H:%M:%S"), "status": "waiting",
            "phase": "", "reason": "", "opening_range": None, "level": None, "trigger": None,
            "last": None, "forming": None, "min_volume_x": min_volume_x,
-           "prev_close": chart.get("prev_close"), "calendar_known": day.year in CALENDAR_YEARS, "_bars": []}
+           "prev_close": chart.get("prev_close"), "source": chart["meta"].get("source") or "yahoo",
+           "kite_patched": kite_bars.patched_label(chart["patched"]) if chart.get("patched") else None, "calendar_known": day.year in CALENDAR_YEARS, "_bars": []}
     dt = chart.get("data_time")
     res["data_time"] = to_local(utc_of(dt)).strftime("%Y-%m-%d %H:%M:%S") if dt else None
     ok, why = trading_day(day)
@@ -438,8 +442,29 @@ def evaluate(chart, now_utc, setup="orb", or_minutes=15, interval="5m", level=No
     res["bars_closed"] = len(bars)
 
     if local < open_dt:
-        res.update(phase="pre-open", reason="the NSE opens at 9:30%s" % (
+        res.update(phase="pre-open", reason="the NSE opens at %s%s" % (short(open_dt),
             " and the %d-minute range is set at %s" % (or_minutes, short(or_end)) if setup == "orb" else ""))
+        return res
+
+    # Yahoo's NSE bars skip slots. A missing bar can hide the breakout bar or shift the
+    # opening range, so a gap up to now means no call at all.
+    upto = min(local - datetime.timedelta(seconds=SETTLE), close_dt)  # the newest bar gets a minute to arrive
+    n_due = int((upto - open_dt).total_seconds()) // step
+    missing = [s for s in range(n_due) if s not in by_slot]
+    if missing:
+        when = ", ".join(short(open_dt + datetime.timedelta(seconds=s * step)) for s in missing[:6])
+        first = open_dt + datetime.timedelta(seconds=missing[0] * step)
+        last = open_dt + datetime.timedelta(seconds=(missing[-1] + 1) * step)  # the bar's END: Kite cuts candles at to_date
+        res.update(status="no-data", phase="open", missing_bars=len(missing),
+                   kite_fetch={"from_date": first.strftime("%Y-%m-%d %H:%M:%S"),
+                               "to_date": last.strftime("%Y-%m-%d %H:%M:%S"),
+                               "interval": "5minute" if interval == "5m" else "minute"},
+                   reason="%d bar(s) missing from Yahoo's data (%s%s), so no entry is called on it. Patch them: "
+                          "fetch Kite %s candles from %s to %s, save the answer, run shared/kite_bars.py add "
+                          "%s FILE, then check again" % (
+                              len(missing), when, " ..." if len(missing) > 6 else "",
+                              "5minute" if interval == "5m" else "minute", first.strftime("%H:%M"),
+                              last.strftime("%H:%M"), chart["symbol"]))
         return res
 
     or_bars = [b for b in bars if b["slot"] < n_or]
@@ -529,7 +554,7 @@ def entry_doc(res, now_utc):
             "bar_index": t.get("bar_index"), "price": t.get("price"), "level": res.get("level"),
             "interval": res["interval"],
             "opening_range": {"high": orr["high"], "low": orr["low"], "minutes": orr["minutes"]} if orr else None,
-            "source": "yahoo", "checked_at": iso(now_utc), "reason": res.get("reason")}
+            "source": res.get("source", "yahoo"), "checked_at": iso(now_utc), "reason": res.get("reason")}
 
 
 def write_json(path, doc):
@@ -558,11 +583,14 @@ def describe(res):
     """Plain lines for a person."""
     when = datetime.datetime.strptime(res["now"], "%Y-%m-%d %H:%M:%S")
     bars = "5-minute" if res["interval"] == "5m" else "1-minute"
-    head = "%s  %s %s IST  %s on %s bars (Yahoo, free, can lag)" % (
-        res["symbol"], when.strftime("%a %Y-%m-%d"), when.strftime("%H:%M"), setup_name(res), bars)
+    src = "Kite candles" if res.get("source") == "kite" else "Yahoo, free, can lag"
+    head = "%s  %s %s IST  %s on %s bars (%s)" % (
+        res["symbol"], when.strftime("%a %Y-%m-%d"), when.strftime("%H:%M"), setup_name(res), bars, src)
     if res.get("data_time") and res["data_time"] <= res["now"] and res["data_time"][:10] == res["date"]:
         head += ", data to %s" % res["data_time"][11:]
     out = [head]
+    if res.get("kite_patched"):
+        out.append("Patched from Kite (Yahoo lacked these bars): %s." % res["kite_patched"])
     orr = res.get("opening_range")
     if orr:
         start = datetime.datetime.strptime(res["opens"], "%H:%M")

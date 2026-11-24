@@ -88,6 +88,7 @@ for _p in (os.path.join(_HERE, "..", "..", "shared"), _HERE):
     if os.path.isfile(os.path.join(_p, "market_in.py")):
         sys.path.insert(0, _p)
 import market_in  # noqa: E402
+import kite_bars  # noqa: E402
 
 
 UA = "Mozilla/5.0 (compatible; india-day-trader-skill)"
@@ -737,6 +738,14 @@ def time_machine(text, plan, now_utc, replays=10000, seed=19, window=2, until=No
                   "the data stops at the %s bar" % entry_day[max(entry_day)]["start"])
         raise TMError("the entry is not in the data: no complete %s bar (closing %s) on %s for %s (%s)"
                       % (clock24(OPEN_MIN + 5 * k), plan["entry_time"], plan["date"], sym, reason))
+    holes = [i for i in range(k) if i not in entry_day]
+    if holes:
+        raise TMError("the data for %s on %s is missing %d bar(s) before the entry (%s), so the opening "
+                      "range can't be trusted. Patch them: fetch Kite 5minute candles from %s %s:00 to %s %s:00, "
+                      "save the answer, run shared/kite_bars.py add %s FILE, then run again"
+                      % (sym, plan["date"], len(holes), ", ".join(clock24(OPEN_MIN + 5 * i) for i in holes[:6]),
+                         plan["date"], clock24(OPEN_MIN + 5 * holes[0]), plan["date"],
+                         clock24(OPEN_MIN + 5 * (holes[-1] + 1)), sym))
     eb = entry_day[k]
     warn = []
     if not eb["l"] - 0.01 <= plan["entry"] <= eb["h"] + 0.01:
@@ -837,6 +846,8 @@ def report(doc):
     lines += ["", doc["verdict"]] + list(doc.get("verdict_notes") or []) + [""]
     for w in doc.get("warnings") or []:
         lines.append("Note: " + w + ".")
+    if doc["data"].get("kite_patched"):
+        lines.append("Patched from Kite (Yahoo lacked these bars): %s." % doc["data"]["kite_patched"])
     if doc["data"]["short_sessions_left_out"]:
         lines.append("Left out %d short session(s) (gaps or missing bars): %s."
                      % (len(doc["data"]["short_sessions_left_out"]),
@@ -908,7 +919,11 @@ def compute(a):
         text, source = read_offline(a.offline, plan["symbol"]), "offline"
     else:
         text, source = fetch_chart(plan["symbol"]), "yahoo"
-    return time_machine(text, plan, now, a.replays, a.seed, a.window, a.until, source)
+    text, patched = kite_bars.patch_text(text, plan["symbol"])
+    doc = time_machine(text, plan, now, a.replays, a.seed, a.window, a.until, source)
+    if patched:
+        doc["data"]["kite_patched"] = kite_bars.patched_label(patched)
+    return doc
 
 
 def cmd_run(a):

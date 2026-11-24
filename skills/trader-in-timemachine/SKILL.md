@@ -18,6 +18,9 @@ description: >-
 
 **Status: ported to NSE / Zerodha Kite (2026-11-24), tested on 23 Nov 2026 data.** The script's docstring (`--help`) is the reference; the checklist below records what was changed.
 
+## Missing bars
+Past sessions with a missing bar are left out of the replays and listed. If the trade day itself is missing a bar before the entry, `timemachine.py` stops and names the Kite window to fetch. Patch it the same way as trader-in-entry (its SKILL.md, "Missing bars"): fetch that window with the Kite MCP, run `shared/kite_bars.py add <SYMBOL> FILE`, and run again. The report then says which bars came from Kite. Without the Kite MCP, tell the user; don't work around it.
+
 ## Porting checklist
 - [x] Replace the NYSE clock block (`NYSE_HOLIDAYS`, `NYSE_EARLY_CLOSE`, `OPEN`/`CLOSE`, `trading_day`, `session`, `next_open`) with `from market_in import ...`.
 - [x] New York time -> India time in messages, defaults and argument help.
