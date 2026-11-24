@@ -10,7 +10,8 @@ description: >-
   days it took to disclose). Flags trades in stocks you hold. Use when the user says
   "insider trading", "are promoters buying", "who is buying X", "bulk deals", "block
   deals", "big investor trades", "did any director sell", "alert me on insider filings",
-  or "run the insider skill". argument-hint: "[symbol or name] [--holdings]"
+  or "run the insider skill".
+argument-hint: "[symbol or name] [--holdings]"
 ---
 
 # trader-in-insider
