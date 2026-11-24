@@ -24,7 +24,8 @@ Sources:
     the result on nseindia.com (the link below) or the company's own release.
     NSE's and BSE's own results APIs need a browser session, so this tool does
     not call them.
-  Filings: NSE's public RSS feeds of financial results and board meetings,
+  Filings: NSE's public RSS feeds: announcements (kept to results filings:
+    financial results and board-meeting outcomes, each with its PDF) and board meetings,
     matched to the company by the symbol in the document link or its name in
     NSE's equity list (EQUITY_L.csv, cached in trader/cache/ for a day). The
     feeds roll: they hold the latest filings only.
@@ -71,7 +72,11 @@ TYPES = {"revenue": "quarterlyTotalRevenue", "cost_of_revenue": "quarterlyCostOf
          "gross_profit": "quarterlyGrossProfit", "operating_income": "quarterlyOperatingIncome",
          "net_income": "quarterlyNetIncome", "eps_diluted": "quarterlyDilutedEPS"}
 NSE_RSS = "https://nsearchives.nseindia.com/content/RSS/%s.xml"
-NSE_FEEDS = {"results": "Financial_Results", "board": "Board_Meetings"}
+# NSE's Financial_Results feed went stale (it held only a few old items in Nov 2026), so
+# results come from the live announcements feed, kept to results filings by RESULTS_RE.
+NSE_FEEDS = {"results": "Online_announcements", "board": "Board_Meetings"}
+RESULTS_RE = re.compile(r"financial results?\b|outcome of (?:the )?board meeting", re.I)
+NOT_RESULTS_RE = re.compile(r"analyst|investor|conference call|earnings call|newspaper|publication", re.I)
 NSE_RESULTS_PAGE = "https://www.nseindia.com/companies-listing/corporate-filings-financial-results"
 EQUITY_L_URL = "https://nsearchives.nseindia.com/content/equities/EQUITY_L.csv"
 EQUITY_L_CACHE = "trader/cache/EQUITY_L.csv"
@@ -300,9 +305,13 @@ def nse_filings(fetcher, sym, company):
             title = (it.findtext("title") or "").strip()
             link = (it.findtext("link") or "").strip()
             m = re.search(r"/corporate/([A-Z0-9&\-]+?)_\d", link)
-            if (m and m.group(1) == sym) or (want and _norm_name(title) == want):
-                out[key].append({"title": title, "detail": " ".join((it.findtext("description") or "").split()),
-                                 "date": _pub(it.findtext("pubDate")), "link": link})
+            if not ((m and m.group(1) == sym) or (want and _norm_name(title) == want)):
+                continue
+            desc = it.findtext("description") or ""
+            if key == "results" and (not RESULTS_RE.search(desc) or NOT_RESULTS_RE.search(desc)):
+                continue  # another kind of announcement
+            out[key].append({"title": title, "detail": " ".join(desc.split()),
+                             "date": _pub(it.findtext("pubDate")), "link": link})
     return out
 
 
@@ -344,7 +353,7 @@ def render(ticker, result, filings):
         out.append("")
         res, board = filings.get("results") or [], filings.get("board") or []
         for f in res[:3]:
-            out.append("NSE financial result filed %s: %s" % (f["date"], f["detail"][:200]))
+            out.append("NSE results filing %s: %s  %s" % (f["date"], f["detail"][:200], f["link"]))
         for f in board[:3]:
             out.append("NSE board meeting notice %s: %s  %s" % (f["date"], f["detail"][:200], f["link"]))
         if not res and not board:
