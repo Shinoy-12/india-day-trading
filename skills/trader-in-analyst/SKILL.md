@@ -1,7 +1,16 @@
 ---
 name: trader-in-analyst
 description: >-
-  Earnings Analyst for Indian listed companies. Reads quarterly results filed under SEBI LODR Reg. 33 (NSE/BSE XBRL) and sums up revenue, margins, net profit and EPS against the same quarter a year earlier.
+  The Earnings Analyst for Indian listed companies. Lays out what changed in a company's
+  reported quarters: revenue, gross, operating and net margins, net profit and diluted
+  EPS, quarter by quarter in Rs crore with Indian fiscal-year labels (Q2 FY27), each
+  against the same quarter a year earlier, with the trailing twelve months. Numbers come
+  from Yahoo Finance's compilation of the filed results (unofficial; it says so and
+  links NSE's results page), plus the company's latest results and board-meeting filings
+  in NSE's feeds. Reads an earnings call transcript when you paste one. Use when the
+  user says "how did TCS's results look", "analyze the earnings", "what changed this
+  quarter", "is revenue growing", "compare margins", "sum up the call", "does it report
+  this week", or before trading a stock around its results.
 ---
 
 # trader-in-analyst

@@ -1,7 +1,16 @@
 ---
 name: trader-in-alerts
 description: >-
-  Price Alerts for NSE/BSE stocks. Rings once when a price, stop, target or the 09:15 NSE open hits; turns a trade plan into stop / target / flat-by alerts; fetches free delayed Yahoo quotes (.NS / .BO).
+  Price Alerts for NSE stocks. Rings when a price, a stop, a target or the opening bell
+  hits. Turns the trade plan into three alerts in one go (the stop, the target and flat-
+  by before Zerodha's MIS square-off, 15:25 or 15:12 for F&O stocks), plus above / below
+  / stop / target levels, percent moves from the previous close, any time of day, and
+  the 09:15 NSE opening bell, each ringing once. Knows NSE hours and holidays in India
+  time, fetches free delayed Yahoo quotes (.NS) or reads a saved Kite quote (official
+  prices plus circuit limits), and writes trader/prices.json for sizing and the risk
+  check. Use when the user says "alert me when", "tell me if RELIANCE hits", "watch my
+  stop", "watch my trade", "remind me to close by 3:05", "is the market open", "when
+  does NSE open", "get me a price", or right after /trader-in-exit writes a plan.
 ---
 
 # trader-in-alerts

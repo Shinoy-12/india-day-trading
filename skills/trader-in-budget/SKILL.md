@@ -1,7 +1,17 @@
 ---
 name: trader-in-budget
 description: >-
-  Budget Manager. Sizes every NSE position in whole shares to your rupee budget and max loss per trade, net of Indian trading costs (STT, exchange, SEBI, stamp duty, GST, brokerage), and writes one order plan in Kite's shape. Nothing is placed.
+  Budget Manager. Sizes every NSE position to your rupee budget and your max loss per
+  trade, counting Indian charges (brokerage, STT, exchange, SEBI, stamp duty, GST).
+  Reads the trade plan from trader-in-exit (entry, stop, target), finds the whole shares
+  that fit inside four limits (max loss per trade, position cap, max order, cash after
+  your buffer, optionally times the stock's Zerodha MIS leverage), says which limit
+  decided it, and writes ONE bracket order to trader/orders.json for trader-in-risk and
+  trader-in-broker. A stop too far away for your max loss is a plain refusal, not a
+  smaller order. Nothing is placed. Use when the user says "how many shares", "size this
+  trade", "how much should I buy", "I have Rs 50,000", "I only want to risk Rs 500 a
+  trade", "use MIS leverage", "set my rules", "keep 10% in cash", or after /trader-in-
+  exit writes a plan.
 ---
 
 # trader-in-budget

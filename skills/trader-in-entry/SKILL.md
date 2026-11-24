@@ -1,7 +1,17 @@
 ---
 name: trader-in-entry
 description: >-
-  Entry Timer for NSE stocks. Builds the opening range (09:15-09:30 IST by default) from free Yahoo 1m/5m bars and calls the entry on the first completed bar that closes above the range high or your level. Long side only; never places an order.
+  Entry Timer for NSE stocks. Watches a setup bar by bar and tells you the moment to get
+  in. Reads free Yahoo 1-minute or 5-minute bars (.NS), builds the opening range (09:15
+  to 09:30 IST by default) and calls the entry on the first completed bar that CLOSES
+  above the range high, or above a level you give it (like a 20-day high from the
+  scanner), with an optional volume check. Knows NSE holidays and that F&O stocks stop
+  at 15:15 for the closing auction. Says waiting and how far, triggered with the time
+  and the price, expired, or not open yet, and writes trader/entry.json for /trader-in-
+  exit. Long side only. It never places an order. Use when the user says "tell me when
+  to get in", "watch RELIANCE", "has it broken out", "did it break the opening range",
+  "entry signal", "time my entry", "check my watchlist", or after /trader-in-scanner and
+  /trader-in-news, before /trader-in-exit.
 ---
 
 # trader-in-entry

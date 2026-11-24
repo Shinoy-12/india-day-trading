@@ -1,7 +1,18 @@
 ---
 name: trader-in-risk
 description: >-
-  Risk Manager for Indian day trades. Blocks anything over your limits before it reaches the broker: stop required, loss at stop (incl. costs) within max loss, reward:risk, daily loss limit, trades per day, entry window, NSE closed, circuit limits, ASM/GSM stocks and non-EQ series. Getting out is never blocked.
+  Risk Manager for Indian day trades. Checks every trade against your limits and stops
+  anything over them before it can reach the broker. For a day trade: a stop is
+  required, the loss at the stop plus Indian charges must fit your max loss per trade,
+  reward:risk must meet your minimum, the day's total risk must fit your daily loss
+  limit, no more than your trades per day, and no new entries outside your entry window,
+  when NSE is closed, after 15:15 for F&O stocks, or after Zerodha's MIS square-off. It
+  also blocks stocks Zerodha doesn't allow for MIS, prices off the tick, buys near the
+  upper circuit, F&O contracts, blocked tickers, oversized orders and duplicates.
+  Getting out is never blocked. Prints PASS or BLOCK with the reason and records the
+  verdicts so trader-in-broker only shows an order that passed. Use when the user says
+  "check my order", "is this safe", "risk check", "does this break my rules", "can I
+  take this trade", "how much have I risked today", or before /trader-in-broker, always.
 ---
 
 # trader-in-risk

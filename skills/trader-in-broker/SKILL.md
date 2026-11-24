@@ -1,7 +1,17 @@
 ---
 name: trader-in-broker
 description: >-
-  Order Executor for Zerodha Kite. Shows each order as a plain ticket and the exact Kite order parameters, records your yes word for word, and never sends without it. Simulated (paper) mode by default because Kite has no paper account.
+  Order Executor for Zerodha Kite. Sends approved orders to your broker, paper (a local
+  simulation, since Kite has no paper account) by default, never without your yes. Shows
+  each order as a plain ticket (a bracket shows its stop-loss, take-profit and the max
+  loss at the stop, charges included) plus the exact Kite tool inputs: an MIS entry,
+  then a GTT two-leg OCO for the stop and target once it fills (Zerodha has no bracket
+  orders). Records your yes word for word; in live mode Kite's own approval asks again.
+  Builds the sell ticket that closes a day trade before the MIS square-off, records
+  fills, and logs each trade's max loss so trader-in-risk can hold the daily limit. Use
+  when the user says "place the order", "buy it", "execute", "send it to Kite", "close
+  my position", "flatten", "get me out", "connect Zerodha", "set up paper trading", or
+  after /trader-in-risk passes.
 ---
 
 # trader-in-broker

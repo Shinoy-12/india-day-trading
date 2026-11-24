@@ -1,7 +1,15 @@
 ---
 name: trader-in-news
 description: >-
-  News Monitor for Indian stocks. Tracks Yahoo headlines for .NS symbols plus NSE/BSE corporate announcements (results, board meetings, M&A, pledges, credit ratings) and how far each stock is from yesterday's close, newest first in India time.
+  News Monitor for NSE stocks. Tracks news on every stock you watch and flags what moves
+  it: Yahoo Finance headlines per ticker (.NS), the company's filings in NSE's public
+  feeds (announcements, financial results, board meetings, corporate actions) and how
+  far each stock is from yesterday's close. Shows only what is new since the last check,
+  newest first, in India time, tags each item (earnings, analyst, deal, capital, people,
+  risk, surveillance, regulatory, macro) and never repeats one. Use when the user says
+  "any news on TCS", "why is this moving", "what's the news on my watchlist", "morning
+  briefing", "pre-market news", "monitor the news", "did anything break", "check the NSE
+  filings", or after /trader-in-scanner finds setups.
 ---
 
 # trader-in-news
