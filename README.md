@@ -40,4 +40,6 @@ scanner -> news -> entry -> exit -> timemachine -> budget -> risk -> broker, wit
 | Broker | Alpaca (paper account) | Zerodha Kite MCP (no paper: local simulation) |
 | Extra rules | PDT | circuit limits, ASM/GSM, STT and other charges |
 
+Known limitations, and the paid or free fixes for each: [LIMITATIONS.md](LIMITATIONS.md).
+
 Not investment advice. Trading tools here never place an order without your explicit yes.
