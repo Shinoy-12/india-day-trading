@@ -511,7 +511,7 @@ def check(orders, cfg, portfolio=None, prices=None, state=None, today=None, now=
 
         # account effects, simulated in order
         cash = acct["cash"]
-        total = cash + sum(acct["values"].values())
+        total = cash + sum(acct["values"].values()) - sum(acct.get("borrowed", {}).values())
         buffer_inr = total * float(c.get("cash_buffer_pct") or 0) / 100.0
         if value is not None and side == "buy" and kind == "entry":
             lev_ok = c.get("allow_margin") and product == "MIS" and lev and float(lev) > 1
@@ -662,15 +662,24 @@ def check(orders, cfg, portfolio=None, prices=None, state=None, today=None, now=
                 batch_loss += max_loss or 0.0
             if side == "buy":
                 if value is not None:
-                    acct["cash"] -= value
+                    lev_ok = (kind == "entry" and c.get("allow_margin") and product == "MIS"
+                              and lev and float(lev) > 1)
+                    margin = value / float(lev) if lev_ok else value   # Zerodha blocks only the margin
+                    acct["cash"] -= margin
                     acct["values"][sym] = acct["values"].get(sym, 0.0) + value
+                    if value > margin:
+                        b = acct.setdefault("borrowed", {})
+                        b[sym] = b.get(sym, 0.0) + value - margin
                 if q is not None:
                     acct["shares"][sym] = held + q
                 elif ref and value is not None:
                     acct["shares"][sym] = held + value / ref
             elif side == "sell":
                 if value is not None:
-                    acct["cash"] += value
+                    repay = min(acct.get("borrowed", {}).get(sym, 0.0), value)   # MIS margin comes back first
+                    if repay:
+                        acct["borrowed"][sym] -= repay
+                    acct["cash"] += value - repay
                     acct["values"][sym] = max(acct["values"].get(sym, 0.0) - value, 0.0)
                 if q is not None:
                     acct["shares"][sym] = held - q
