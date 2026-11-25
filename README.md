@@ -16,6 +16,7 @@ shared/
   refresh_data.py           re-downloads both Zerodha lists
 skills/trader-in-*/   one folder per skill
 tools/                the one-off porting scripts (reproducible port)
+auto-paper/           unattended PAPER trading (see RUNBOOK.md) and the 60-day ORB filter backtest
 install.sh            copies skills + shared files into ~/.claude/skills
 ```
 
